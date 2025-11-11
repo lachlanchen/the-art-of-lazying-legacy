@@ -1,3 +1,16 @@
+<p>
+  <b>Languages:</b>
+  <a href="README.md">English</a>
+  · <a href="i18n/README.zh-Hant.md">中文（繁體）</a>
+  · <a href="i18n/README.zh-Hans.md">中文 (简体)</a>
+  · <a href="i18n/README.ja.md">日本語</a>
+  · <a href="i18n/README.ko.md">한국어</a>
+  · <a href="i18n/README.vi.md">Tiếng Việt</a>
+  · <a href="i18n/README.ar.md">العربية</a>
+  · <a href="i18n/README.fr.md">Français</a>
+  · <a href="i18n/README.es.md">Español</a>
+</p>
+
 # The Art of Lazying
 
 A repository that promotes strategic laziness for a simplified, productive life, encompassing AI agents, language learning, and vlogs with practical tips and real-life use cases.
