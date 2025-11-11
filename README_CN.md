@@ -91,3 +91,40 @@ the-art-of-lazying/
 分享您在策略性懒惰生活中的经验、技巧和想法，并与其他拥有相同兴趣的人合作。
 
 示例：“一个关于交流生产力黑客和简化日常流程的工具的论坛。”
+
+---
+
+## 支持 / 捐助
+
+<div align="center">
+<table style="margin:0 auto; text-align:center; border-collapse:collapse;">
+  <tr>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
+      <a href="https://chat.lazying.art/donate">https://chat.lazying.art/donate</a>
+    </td>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
+      <a href="https://chat.lazying.art/donate"><img src="figs/donate_button.svg" alt="Donate" height="44"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
+      <a href="https://paypal.me/RongzhouChen">
+        <img src="https://img.shields.io/badge/PayPal-Donate-003087?logo=paypal&logoColor=white" alt="PayPal 捐助">
+      </a>
+    </td>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
+      <a href="https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400">
+        <img src="https://img.shields.io/badge/Stripe-Donate-635bff?logo=stripe&logoColor=white" alt="Stripe 捐助">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>微信</strong></td>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>支付宝</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="WeChat QR" src="figs/donate_wechat.png" width="240"/></td>
+    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="Alipay QR" src="figs/donate_alipay.png" width="240"/></td>
+  </tr>
+</table>
+</div>
