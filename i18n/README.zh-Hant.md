@@ -1,6 +1,8 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # The Art of Lazying
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -11,6 +13,8 @@
 [![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#專案)
 
 這是一個提倡「策略性偷懶」的儲存庫，目標是讓生活更簡化且更高效，內容涵蓋 AI 代理、語言學習與 vlog，並附帶實用技巧與真實情境案例。
+
+> 少做低槓桿工作，交付更有價值的成果。
 
 ![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
 
@@ -37,33 +41,42 @@
 - [社群貢獻](#社群貢獻)
 - [貢獻方式](#貢獻方式)
 - [聯絡](#聯絡)
-- [支持 / 捐助](#支持--捐助)
+- [❤️ Support](#-support)
 - [授權](#授權)
 
 ## 概覽
 
-`The Art of Lazying` 是一個總整型儲存庫，結合哲學思維、實作自動化、AI 輔助創作工具與語言學習實驗。
+`The Art of Lazying` 是一個總整型儲存庫，結合哲學思維、實務自動化、AI 輔助創作工具與語言學習實驗。
 
-內容包括：
+### 專案訊號
+
+| 訊號 | 內容 |
+|---|---|
+| 🧩 儲存庫類型 | Legacy 風格的 umbrella 專案 |
+| 🧪 執行重點 | Python + shell 工具 + Raspberry Pi 工具鏈 |
+| 🌐 文件 | `i18n/` 中的多語 README |
+| 🪪 授權 | MIT |
+
+包含：
 
 - 已連結的 AI 專案與工作流程展示。
 - 用於安全 shell 操作與實用流程的本地腳本/工具。
 - 以 Raspberry Pi + Waveshare 電子紙 + OpenAI 打造的硬體語言學習專案（`EinkWordsGPT`）。
-- DNS/IP 聚合與 repo-to-text 轉換等 vlog/工具實驗。
+- DNS/IP 聚合與 repo-to-text 轉換等 vlog / 工具實驗。
 - 位於 [`i18n/`](i18n) 的多語系文件。
 
 ### 快速總覽
 
-| Focus | What you get |
+| 重點 | 可獲得內容 |
 |------|---|
-| 🧠 Philosophy | 用於高槓桿工作的策略性偷懶原則 |
-| 🤖 AI | 創意協助、轉錄、翻譯、發佈支援 |
-| 🛠️ Utilities | 安全刪除/還原、DNS/IP 工具、儲存庫文字轉換 |
-| 🌍 i18n | `i18n/` 中的多語 README 版本 |
+| 🧠 哲學 | 聚焦高槓桿工作的策略性偷懶原則 |
+| 🤖 AI | 創意輔助、轉錄、翻譯、發佈支援 |
+| 🛠️ 實用工具 | 安全刪除/回復、DNS/IP 工具、儲存庫文字轉換 |
+| 🌍 i18n | `i18n/` 中的多語版本 README |
 
 ## 特色
 
-- 聚焦於高槓桿投入的策略性偷懶框架。
+- 以高槓桿投入為核心的策略性偷懶框架。
 - AI 輔助創作與發佈流程參考。
 - 語言學習工具與電子紙學習顯示系統。
 - Shell 安全輔助工具（`saferm`、`unrm`、`removeitanyway`）。
@@ -74,28 +87,28 @@
 
 ### 🤖 AI 驅動創作工具
 
-| Project | Description | Demo |
+| 專案 | 說明 | 示範 |
 |---------|-------------|------|
-| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | E-ink display with GPT-powered word learning | ![WordsOrigin](demos/words_card_arabic.JPG) |
-| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | Words origin analysis and presenting in graph. | ![WordsOrigin](demos/words_origin.jpg) |
-| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | Tools for efficient language learning with minimal effort | |
-| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | Video & image captioning with OpenAI CLIP embeddings + GPT decoder | ![AutoCaption](demos/autocaption.PNG) |
-| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | Video captioning tool: extract key-frames with Katna/OpenCV & generate captions with a ViT+GPT-2 model | |
-| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | Multilingual transcription pipeline with fine-grained language detection | ![AutoTranscription](demos/autotranscription.PNG) |
-| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | Breaking language barriers for global creative exchange | ![AutoTranslation](demos/autotranslation.JPG) |
-| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | Automatic metadata generation for videos | |
-| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | AI-powered automatic video editing tool with transcription, auto-subtitle, highlighting, and metadata generation | |
-| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | Streamlining content publishing workflows | ![AutoPublication](demos/autopublication.png) |
-| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | Automated system for monitoring, processing, and publishing video content to multiple platforms | |
-| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | Advanced techniques for effectively using AI assistants | |
+| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | 以 GPT 為核心的電子紙單字學習顯示器 | ![WordsOrigin](demos/words_card_arabic.JPG) |
+| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | 詞源分析並以圖表呈現。 | ![WordsOrigin](demos/words_origin.jpg) |
+| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | 用最少努力達到高效率語言學習的工具 | |
+| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | 結合 OpenAI CLIP embeddings 與 GPT decoder 的影音與圖片字幕工具 | ![AutoCaption](demos/autocaption.PNG) |
+| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | 影像字幕工具：用 Katna/OpenCV 擷取關鍵影格，並用 ViT+GPT-2 生成字幕 | |
+| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | 支援細緻語言判定的多語轉錄流程 | ![AutoTranscription](demos/autotranscription.PNG) |
+| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | 破除語言隔閡，促進全球創作交流 | ![AutoTranslation](demos/autotranslation.JPG) |
+| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | 影片自動產生元資料 | |
+| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | AI 驅動的自動影片剪輯工具，含轉錄、自動字幕、重點標示與元資料產生 | |
+| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | 優化內容發佈流程 | ![AutoPublication](demos/autopublication.png) |
+| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | 自動化監控、處理並將影片內容同步發布到多個平台 | |
+| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | 更有效率使用 AI 助手的進階技巧 | |
 
 ### 🔄 自動化工具
 
-此儲存庫中的本地自動化/工具包含：
+此儲存庫中的本地自動化與工具包含：
 
-- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh)：為 shell 使用者提供更安全的刪除/還原流程。
+- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh)：為 shell 使用者提供更安全的刪除/回復流程。
 - [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py)：網域到 IP/CIDR 的解析與去重工具。
-- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py)：依子目錄將 Python 檔合併為文字產物。
+- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py)：依子目錄將 Python 檔合併成文字成果。
 
 ## 專案結構
 
@@ -134,7 +147,7 @@ the-art-of-lazying/
     └── repo2text/
 ```
 
-### 原始概念性資料夾結構（保留）
+### 保留的原始概念結構（參考）
 
 ```text
 the-art-of-lazying/
@@ -160,7 +173,7 @@ the-art-of-lazying/
 
 ## 簡介
 
-The Art of Lazying 將策略性偷懶視為一種優化精力使用、聚焦真正重要事項的方法。本儲存庫探討如何透過有意識的「偷懶」，提升生產力、創造力與整體福祉。
+The Art of Lazying 將「策略性偷懶」視為一種優化精力使用、聚焦真正重要事情的方法。本儲存庫探討如何透過有意識的「偷懶」，提升生產力、創造力與整體福祉。
 
 ## 偷懶理論
 
@@ -189,13 +202,13 @@ The Art of Lazying 將策略性偷懶視為一種優化精力使用、聚焦真�
 
 探索可簡化任務的 AI 代理與自動化工具開發：
 
-- 將 ChatGPT 作為個人助理。
+- 將 ChatGPT 當作個人助理。
 - 建立客製化自動化工作流程。
 - 打造用於被動學習的電子紙顯示器。
 
 ## 語言學習與 Vlog
 
-提供高效率語言學習資源與技巧，並透過 vlog 記錄偷懶實踐歷程：
+提供高效率語言學習資源與技巧，並透過 vlog 記錄「策略性偷懶」的實踐歷程：
 
 - 以間隔重複建立個人化語言學習流程。
 - 實作沉浸式學習技巧。
@@ -205,6 +218,15 @@ The Art of Lazying 將策略性偷懶視為一種優化精力使用、聚焦真�
 
 此儲存庫為多專案集合，沒有單一頂層依賴清單。請依你要使用的模組安裝所需套件。
 
+### 環境檢查表
+
+| 項目 | 基準值 |
+|---|---|
+| 作業系統 | 建議 Linux/macOS（用於 shell 流程） |
+| Python | 3.9+ |
+| 套件管理器 | `pip` |
+| 版本控制 | `git` |
+
 常見需求：
 
 - `git`
@@ -212,7 +234,7 @@ The Art of Lazying 將策略性偷懶視為一種優化精力使用、聚焦真�
 - `pip`
 - 可選虛擬環境工具（`python -m venv`）
 
-根據原始碼/README 顯示的模組需求：
+模組需求（依原始碼/README 註記）：
 
 - `code/EinkWordsGPT`：`openai`、`Pillow`、`pytz`、`pykakasi`、Waveshare 電子紙 Python 函式庫（`waveshare_epd`）與相容硬體。
 - `vlogs/chatgpt-traffic`：`dnspython`。
@@ -220,7 +242,7 @@ The Art of Lazying 將策略性偷懶視為一種優化精力使用、聚焦真�
 
 ## 安裝
 
-### 1. Clone the repository
+### 1. 複製這個儲存庫
 
 ```bash
 git clone https://github.com/lachlanchen/the-art-of-lazying.git
@@ -235,13 +257,13 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 ```
 
-### 3. 針對所選模組安裝 Python 依賴
+### 3. 安裝所選模組的 Python 依賴
 
 ```bash
 pip install openai pillow pytz pykakasi dnspython
 ```
 
-### 4. SafeShell 設定（可選）
+### 4. 設定 SafeShell（可選）
 
 ```bash
 cd scripts/lazy-care/SafeShell
@@ -280,6 +302,16 @@ export OPENAI_API_KEY="your_api_key_here"
 
 ## 使用方式
 
+### 指令速覽
+
+| 任務 | 指令所在目錄 | 主要指令 |
+|---|---|---|
+| EinkWordsGPT 顯示循環 | `code/EinkWordsGPT` | `python words_gpt.py` |
+| EinkWordsGPT 更新器 | `code/EinkWordsGPT` | `python words_update.py` |
+| Domain/IP 解析器 | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
+| 儲存庫文字匯總工具 | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
+| SafeShell 回復流程 | shell 設定檔 + 目前 shell | `saferm`、`unrm`、`removeitanyway` |
+
 ### 執行 EinkWordsGPT 顯示循環（需要硬體環境）
 
 ```bash
@@ -294,7 +326,7 @@ cd code/EinkWordsGPT
 python words_update.py
 ```
 
-### 執行 ChatGPT 流量網域/IP 解析工具
+### 執行 ChatGPT 流量 domain/IP 解析工具
 
 ```bash
 cd vlogs/chatgpt-traffic
@@ -326,32 +358,32 @@ removeitanyway /path/to/file_or_directory
 
 ## 開發備註
 
-- 這個儲存庫是 legacy 風格的總整專案，不是單體封裝應用程式。
+- 這個儲存庫是 legacy 風格的 umbrella 專案，不是單體封裝應用程式。
 - Projects 表中的多個連結工具位於外部儲存庫；執行細節請以各自 README 為準。
-- 部分內部文件描述的是較舊檔案布局（例如 `scripts/lazy-care` 提到拆分腳本，但目前實作已整合於 `SafeShell/safeshell_functions.sh`）。
-- `EinkWordsGPT` 中依賴硬體的程式碼預設 Raspberry Pi + Waveshare 電子紙環境。
+- 部分內部文件描述的是較舊檔案配置（例如 `scripts/lazy-care` 提到拆分腳本，但目前實作已整合在 `SafeShell/safeshell_functions.sh`）。
+- `EinkWordsGPT` 中的硬體相依程式碼預設在 Raspberry Pi + Waveshare 電子紙環境。
 
 ### 假設（明確）
 
-- 頂層 README 為主要入口；外部連結專案的詳細執行說明維護在其各自儲存庫。
-- Python 套件版本刻意保持開放，因為此儲存庫目前未提供根目錄 `requirements.txt`/`pyproject.toml`。
-- 對 `EinkWordsGPT` 而言，Waveshare 硬體的裝置驅動安裝步驟預期在目標 Raspberry Pi 環境中完成。
+- 頂層 README 是主要入口；外部連結專案的詳細執行說明維護在其各自儲存庫。
+- Python 套件版本刻意保持彈性，因為本專案目前未提供根目錄 `requirements.txt` / `pyproject.toml`。
+- 對 `EinkWordsGPT` 而言，Waveshare 硬體驅動安裝步驟預期在目標 Raspberry Pi 環境中完成。
 
 ## 疑難排解
 
 - `ModuleNotFoundError: waveshare_epd`：在目標裝置安裝 Waveshare 電子紙函式庫，並確認硬體相關依賴。
-- OpenAI 驗證錯誤：確認 `OPENAI_API_KEY` 已在目前 shell/session 設定。
-- `words_phonetics.db` 或字型出現 `File not found`：請從 `code/EinkWordsGPT` 執行腳本，讓相對路徑可正確解析。
+- OpenAI 驗證錯誤：確認 `OPENAI_API_KEY` 已在目前的 shell/session 中設定。
+- `words_phonetics.db` 或字型出現 `File not found`：請在 `code/EinkWordsGPT` 目錄下執行腳本，讓相對路徑可正確解析。
 - 找不到 SafeShell 指令：確認 `safeshell_functions.sh` 已追加到正確的 shell 設定檔，並重新載入 shell。
 - `repo2text` 沒有產生檔案：檢查 `source_directory` 是否存在且包含 `.py` 檔案。
 
 ## 路線圖
 
 - 透過可選的模組級 `requirements.txt` 統一依賴管理。
-- 在根目錄新增常用流程的 task runner 或 Makefile。
+- 在根目錄新增常用流程的任務執行器（Task runner）或 Makefile。
 - 擴充 Raspberry Pi + Waveshare 部署的可重現安裝文件。
 - 為工具腳本與資料轉換輔助新增測試。
-- 持續提升 `i18n/` 多語文件的一致性。
+- 持續提升 `i18n/` 的多語文件一致性。
 
 ## 社群貢獻
 
@@ -377,48 +409,19 @@ removeitanyway /path/to/file_or_directory
 
 ## 聯絡
 
-| Channel | Link |
+| 通道 | 連結 |
 |---|---|
-| 🌐 Website | [lazying.art](https://lazying.art) |
-| 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
-| ✉️ Email | `lach@lazying.art` |
+| 🌐 官方網站 | [![Website](https://img.shields.io/badge/lazying.art-Visit-0A66C2?style=flat-square)](https://lazying.art) |
+| 🧑‍💻 GitHub | [![GitHub](https://img.shields.io/badge/lachlanchen-Profile-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lachlanchen) |
+| ✉️ 電子信箱 | `lach@lazying.art` |
 
 ---
 
-## 支持 / 捐助
+## ❤️ Support
 
-<div align="center">
-<table style="margin:0 auto; text-align:center; border-collapse:collapse;">
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate">https://chat.lazying.art/donate</a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate"><img src="figs/donate_button.svg" alt="Donate" height="44"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://paypal.me/RongzhouChen">
-        <img src="https://img.shields.io/badge/PayPal-Donate-003087?logo=paypal&logoColor=white" alt="Donate with PayPal">
-      </a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400">
-        <img src="https://img.shields.io/badge/Stripe-Donate-635bff?logo=stripe&logoColor=white" alt="Donate with Stripe">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>WeChat</strong></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>Alipay</strong></td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="WeChat QR" src="figs/donate_wechat.png" width="240"/></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="Alipay QR" src="figs/donate_alipay.png" width="240"/></td>
-  </tr>
-</table>
-</div>
+| Donate | PayPal | Stripe |
+|---|---|---|
+| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## 授權
 

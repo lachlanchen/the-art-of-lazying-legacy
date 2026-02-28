@@ -1,6 +1,8 @@
 [English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # The Art of Lazying
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -11,6 +13,8 @@
 [![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#projects)
 
 A repository that promotes strategic laziness for a simplified, productive life, encompassing AI agents, language learning, and vlogs with practical tips and real-life use cases.
+
+> Work less on low-leverage tasks, ship more meaningful outcomes.
 
 ![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
 
@@ -37,12 +41,21 @@ A repository that promotes strategic laziness for a simplified, productive life,
 - [Community Contributions](#community-contributions)
 - [Contributing](#contributing)
 - [Connect](#connect)
-- [Support / Donate](#support--donate)
+- [❤️ Support](#-support)
 - [License](#license)
 
 ## Overview
 
 `The Art of Lazying` is an umbrella repository mixing philosophy, practical automation, AI-assisted creative tooling, and language-learning experiments.
+
+### Project Signals
+
+| Signal | Value |
+|---|---|
+| 🧩 Repository Type | Legacy-style umbrella repo |
+| 🧪 Runtime Focus | Python + shell utilities + Raspberry Pi tooling |
+| 🌐 Documentation | Multilingual READMEs in `i18n/` |
+| 🪪 License | MIT |
 
 It includes:
 
@@ -63,12 +76,12 @@ It includes:
 
 ## Features
 
-- Strategic laziness framework focused on high-leverage effort.
-- AI-assisted creative and publishing workflow references.
-- Language-learning utilities and e-ink study display system.
-- Shell safety helpers (`saferm`, `unrm`, `removeitanyway`).
-- Lightweight Python utilities for DNS/IP collection and codebase text merging.
-- Multilingual README support.
+- ✅ Strategic laziness framework focused on high-leverage effort.
+- ✅ AI-assisted creative and publishing workflow references.
+- ✅ Language-learning utilities and e-ink study display system.
+- ✅ Shell safety helpers (`saferm`, `unrm`, `removeitanyway`).
+- ✅ Lightweight Python utilities for DNS/IP collection and codebase text merging.
+- ✅ Multilingual README support.
 
 ## Projects
 
@@ -205,6 +218,15 @@ Resources and techniques for efficient language learning, plus vlogs documenting
 
 This repository is multi-project and does not include a single top-level dependency manifest. Install only what you need per module.
 
+### Environment Checklist
+
+| Item | Baseline |
+|---|---|
+| OS | Linux/macOS recommended (for shell workflows) |
+| Python | 3.9+ |
+| Package manager | `pip` |
+| Version control | `git` |
+
 Common requirements:
 
 - `git`
@@ -279,6 +301,16 @@ Adjust this path in the script if your machine uses a different layout.
 Edit these variables before execution.
 
 ## Usage
+
+### Command Quick Index
+
+| Task | Command Path | Primary Command |
+|---|---|---|
+| EinkWordsGPT display loop | `code/EinkWordsGPT` | `python words_gpt.py` |
+| EinkWordsGPT updater | `code/EinkWordsGPT` | `python words_update.py` |
+| Domain/IP resolver | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
+| Repo-to-text merge | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
+| SafeShell recovery workflow | shell profile + current shell | `saferm`, `unrm`, `removeitanyway` |
 
 ### Run EinkWordsGPT display loop (hardware setup required)
 
@@ -379,13 +411,19 @@ If your change affects a specific submodule, update that submodule README as wel
 
 | Channel | Link |
 |---|---|
-| 🌐 Website | [lazying.art](https://lazying.art) |
-| 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
+| 🌐 Website | [![Website](https://img.shields.io/badge/lazying.art-Visit-0A66C2?style=flat-square)](https://lazying.art) |
+| 🧑‍💻 GitHub | [![GitHub](https://img.shields.io/badge/lachlanchen-Profile-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lachlanchen) |
 | ✉️ Email | `lach@lazying.art` |
 
 ---
 
-## Support / Donate
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+|---|---|---|
+| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+Additional options (including QR codes) are kept below:
 
 <div align="center">
 <table style="margin:0 auto; text-align:center; border-collapse:collapse;">

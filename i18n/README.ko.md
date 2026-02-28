@@ -1,6 +1,8 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
+
 # The Art of Lazying
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -10,11 +12,13 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](#prerequisites)
 [![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#projects)
 
-AI 에이전트, 언어 학습, 브이로그를 아우르며, 실용적인 팁과 실제 활용 사례를 통해 더 단순하고 생산적인 삶을 위한 전략적 게으름을 제안하는 저장소입니다.
+AI 에이전트, 언어 학습, 브이로그를 아우르며 실전 팁과 실제 활용 사례를 통해 더 단순하고 생산적인 삶을 추구하는 전략적 게으름 저장소입니다.
+
+> 핵심 가치가 낮은 일에는 덜 투자하고, 결과가 큰 일에 더 집중하세요.
 
 ![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
 
-## Table of Contents
+## 목차
 
 - [개요](#overview)
 - [기능](#features)
@@ -36,20 +40,29 @@ AI 에이전트, 언어 학습, 브이로그를 아우르며, 실용적인 팁�
 - [로드맵](#roadmap)
 - [커뮤니티 기여](#community-contributions)
 - [기여하기](#contributing)
-- [연락처](#connect)
-- [지원 / 후원](#support--donate)
+- [연결](#connect)
+- [❤️ Support](#-support)
 - [라이선스](#license)
 
 ## Overview
 
-`The Art of Lazying`는 철학, 실용 자동화, AI 보조 창작 도구, 언어 학습 실험을 함께 담은 우산형(umbrella) 저장소입니다.
+`The Art of Lazying`는 철학, 실전 자동화, AI 보조 창작 도구, 언어 학습 실험을 함께 담은 우산형(umbrella) 저장소입니다.
 
-포함 내용:
+### 프로젝트 시그널
 
-- 연결된 AI 프로젝트와 워크플로 쇼케이스.
+| 시그널 | 값 |
+|---|---|
+| 🧩 저장소 유형 | 레거시 스타일 우산형 저장소 |
+| 🧪 런타임 초점 | Python + Shell 유틸리티 + Raspberry Pi 도구 |
+| 🌐 문서 | `i18n/` 내 다국어 README |
+| 🪪 라이선스 | MIT |
+
+저장소에는 다음이 포함됩니다:
+
+- 연동된 AI 프로젝트와 워크플로우 쇼케이스.
 - 안전한 셸 작업 및 유틸리티 워크플로를 위한 로컬 스크립트/도구.
 - Raspberry Pi + Waveshare e-ink + OpenAI 기반의 하드웨어 언어 학습 프로젝트(`EinkWordsGPT`).
-- DNS/IP 집계, 저장소-텍스트 변환 같은 브이로그/도구 실험.
+- DNS/IP 집계, 저장소 텍스트 변환 같은 브이로그/도구 실험.
 - [`i18n/`](i18n) 아래의 다국어 문서.
 
 ### Quick Snapshot
@@ -64,7 +77,7 @@ AI 에이전트, 언어 학습, 브이로그를 아우르며, 실용적인 팁�
 ## Features
 
 - 높은 레버리지의 노력에 초점을 맞춘 전략적 게으름 프레임워크.
-- AI 보조 창작 및 발행 워크플로 참고 자료.
+- AI 보조 창작 및 발행 워크플로우 참고 자료.
 - 언어 학습 유틸리티와 e-ink 학습 디스플레이 시스템.
 - 셸 안전 도우미(`saferm`, `unrm`, `removeitanyway`).
 - DNS/IP 수집 및 코드베이스 텍스트 병합을 위한 경량 Python 유틸리티.
@@ -72,24 +85,24 @@ AI 에이전트, 언어 학습, 브이로그를 아우르며, 실용적인 팁�
 
 ## Projects
 
-### 🤖 AI-Powered Creative Tools
+### 🤖 AI 기반 창작 도구
 
 | Project | Description | Demo |
 |---------|-------------|------|
-| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | E-ink display with GPT-powered word learning | ![WordsOrigin](demos/words_card_arabic.JPG) |
-| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | Words origin analysis and presenting in graph. | ![WordsOrigin](demos/words_origin.jpg) |
-| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | Tools for efficient language learning with minimal effort | |
-| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | Video & image captioning with OpenAI CLIP embeddings + GPT decoder | ![AutoCaption](demos/autocaption.PNG) |
-| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | Video captioning tool: extract key-frames with Katna/OpenCV & generate captions with a ViT+GPT-2 model | |
-| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | Multilingual transcription pipeline with fine-grained language detection | ![AutoTranscription](demos/autotranscription.PNG) |
-| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | Breaking language barriers for global creative exchange | ![AutoTranslation](demos/autotranslation.JPG) |
-| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | Automatic metadata generation for videos | |
-| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | AI-powered automatic video editing tool with transcription, auto-subtitle, highlighting, and metadata generation | |
-| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | Streamlining content publishing workflows | ![AutoPublication](demos/autopublication.png) |
-| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | Automated system for monitoring, processing, and publishing video content to multiple platforms | |
-| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | Advanced techniques for effectively using AI assistants | |
+| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | GPT 기반 단어 학습을 제공하는 E-ink 디스플레이 | ![WordsOrigin](demos/words_card_arabic.JPG) |
+| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | 단어 기원 분석 및 그래프 기반 표현 | ![WordsOrigin](demos/words_origin.jpg) |
+| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | 최소한의 노력으로 효율적 언어 학습을 돕는 도구 | |
+| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | OpenAI CLIP 임베딩 + GPT 디코더를 이용한 비디오/이미지 자막 생성 | ![AutoCaption](demos/autocaption.PNG) |
+| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | 비디오 캡션 도구: Katna/OpenCV로 키프레임 추출 후 ViT+GPT-2로 자막 생성 | |
+| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | 세분화된 언어 감지를 지원하는 다국어 전사 파이프라인 | ![AutoTranscription](demos/autotranscription.PNG) |
+| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | 글로벌 창작 협업을 위한 언어 장벽 완화 | ![AutoTranslation](demos/autotranslation.JPG) |
+| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | 비디오용 메타데이터 자동 생성 | |
+| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | 전사, 자동 자막, 하이라이트, 메타데이터 생성을 갖춘 AI 기반 자동 비디오 편집 도구 | |
+| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | 콘텐츠 발행 워크플로 최적화 | ![AutoPublication](demos/autopublication.png) |
+| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | 여러 플랫폼에 동영상 콘텐츠를 모니터링/처리/게시하는 자동 시스템 | |
+| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | AI 어시스턴트를 효율적으로 사용하는 고급 기법 | |
 
-### 🔄 Automation Tools
+### 🔄 자동화 도구
 
 이 저장소의 로컬 자동화/도구에는 다음이 포함됩니다.
 
@@ -166,7 +179,7 @@ The Art of Lazying는 에너지 사용을 최적화하고 진짜 중요한 일�
 
 우선순위화, 위임, 자동화를 통해 생산성과 웰빙을 극대화하는 전략적 게으름의 원칙을 종합적으로 소개합니다.
 
-핵심 원칙은 파레토의 80/20 법칙을 일상에 적용하는 것입니다. 즉, 원하는 결과의 80%를 만드는 20% 활동을 식별하는 것입니다.
+핵심 원칙은 파레토의 80/20 법칙을 일상에 적용하는 것입니다. 즉, 원하는 결과의 80%를 만드는 20%의 활동을 찾아내고 집중하는 것입니다.
 
 ## Practical Tips and Tricks
 
@@ -190,7 +203,7 @@ The Art of Lazying는 에너지 사용을 최적화하고 진짜 중요한 일�
 작업을 단순화하는 AI 에이전트와 자동화 도구 개발을 다룹니다.
 
 - ChatGPT를 개인 비서로 활용.
-- 맞춤형 자동화 워크플로 구축.
+- 맞춤형 자동화 워크플로우 구축.
 - 수동 학습을 위한 e-ink 디스플레이 제작.
 
 ## Language Learning and Vlogs
@@ -203,7 +216,16 @@ The Art of Lazying는 에너지 사용을 최적화하고 진짜 중요한 일�
 
 ## Prerequisites
 
-이 저장소는 여러 프로젝트로 구성되어 있으며, 단일 최상위 의존성 매니페스트를 제공하지 않습니다. 모듈별로 필요한 항목만 설치하세요.
+이 저장소는 여러 프로젝트로 구성되어 있으며 단일 최상위 의존성 매니페스트를 제공하지 않습니다. 모듈별로 필요한 항목만 설치하세요.
+
+### Environment Checklist
+
+| 항목 | 기준 |
+|---|---|
+| OS | Linux/macOS 권장 (shell 워크플로우용) |
+| Python | 3.9+ |
+| 패키지 매니저 | `pip` |
+| 버전 관리 | `git` |
 
 공통 요구사항:
 
@@ -245,8 +267,8 @@ pip install openai pillow pytz pykakasi dnspython
 
 ```bash
 cd scripts/lazy-care/SafeShell
-cat safeshell_functions.sh >> ~/.bashrc  # or ~/.zshrc
-source ~/.bashrc  # or ~/.zshrc
+cat safeshell_functions.sh >> ~/.bashrc  # 또는 ~/.zshrc
+source ~/.bashrc  # 또는 ~/.zshrc
 ```
 
 ## Configuration
@@ -260,9 +282,9 @@ source ~/.bashrc  # or ~/.zshrc
 export OPENAI_API_KEY="your_api_key_here"
 ```
 
-### SafeShell trash location
+### SafeShell 휴지통 위치
 
-- `safeshell_functions.sh`는 고정된 휴지통 기본 경로를 사용합니다:
+- `safeshell_functions.sh`는 고정된 휴지통 기본 경로를 사용합니다.
 
 ```bash
 /mnt/disk/BIN/ROOT
@@ -270,9 +292,9 @@ export OPENAI_API_KEY="your_api_key_here"
 
 사용 중인 장비의 디렉터리 구조가 다르다면 스크립트에서 이 경로를 수정하세요.
 
-### repo2text source/target directories
+### repo2text source/target 디렉터리
 
-- `vlogs/repo2text/convert-repo-to-merged-text.py`는 현재 다음과 같이 설정되어 있습니다:
+- `vlogs/repo2text/convert-repo-to-merged-text.py`는 현재 다음과 같이 설정되어 있습니다.
   - `source_directory = 'diffraction'`
   - `target_directory = 'merged_py_files'`
 
@@ -280,21 +302,31 @@ export OPENAI_API_KEY="your_api_key_here"
 
 ## Usage
 
-### Run EinkWordsGPT display loop (hardware setup required)
+### 작업 바로가기
+
+| 작업 | 명령 경로 | 주요 명령 |
+|---|---|---|
+| EinkWordsGPT 디스플레이 루프 | `code/EinkWordsGPT` | `python words_gpt.py` |
+| EinkWordsGPT 업데이트 | `code/EinkWordsGPT` | `python words_update.py` |
+| 도메인/IP 해석기 | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
+| 레포 텍스트 병합 | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
+| SafeShell 복구 워크플로 | shell 프로필 + 현재 shell | `saferm`, `unrm`, `removeitanyway` |
+
+### EinkWordsGPT 디스플레이 루프 실행(하드웨어 설정 필요)
 
 ```bash
 cd code/EinkWordsGPT
 python words_gpt.py
 ```
 
-### Run EinkWordsGPT word maintenance/update script
+### EinkWordsGPT 단어 관리/업데이트 스크립트 실행
 
 ```bash
 cd code/EinkWordsGPT
 python words_update.py
 ```
 
-### Run ChatGPT traffic domain/IP resolver
+### ChatGPT traffic 도메인/IP 해석기 실행
 
 ```bash
 cd vlogs/chatgpt-traffic
@@ -302,14 +334,14 @@ pip install dnspython
 python chatgpt-traffic.py
 ```
 
-### Run repository Python-file merger
+### 레포지토리 Python 파일 병합 실행
 
 ```bash
 cd vlogs/repo2text
 python convert-repo-to-merged-text.py
 ```
 
-### Use SafeShell commands after sourcing
+### SafeShell 명령 사용(소스 설정 후)
 
 ```bash
 saferm /path/to/file_or_directory
@@ -365,60 +397,31 @@ removeitanyway /path/to/file_or_directory
 
 콘텐츠, 스크립트, 프로젝트 문서 전반의 기여를 환영합니다.
 
-Standard flow:
+표준 절차:
 
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+1. 프로젝트를 포크(fork)합니다.
+2. 기능 브랜치를 만듭니다 (`git checkout -b feature/AmazingFeature`).
+3. 변경사항을 커밋합니다 (`git commit -m 'Add some AmazingFeature'`).
+4. 브랜치에 푸시합니다 (`git push origin feature/AmazingFeature`).
+5. 풀 리퀘스트를 열어 주세요.
 
 특정 하위 모듈에 영향을 주는 변경이라면 해당 하위 모듈 README도 함께 업데이트해 주세요.
 
 ## Connect
 
-| Channel | Link |
+| 채널 | 링크 |
 |---|---|
-| 🌐 Website | [lazying.art](https://lazying.art) |
+| 🌐 웹사이트 | [lazying.art](https://lazying.art) |
 | 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
-| ✉️ Email | `lach@lazying.art` |
+| ✉️ 이메일 | `lach@lazying.art` |
 
 ---
 
-## Support / Donate
+## ❤️ Support
 
-<div align="center">
-<table style="margin:0 auto; text-align:center; border-collapse:collapse;">
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate">https://chat.lazying.art/donate</a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate"><img src="figs/donate_button.svg" alt="Donate" height="44"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://paypal.me/RongzhouChen">
-        <img src="https://img.shields.io/badge/PayPal-Donate-003087?logo=paypal&logoColor=white" alt="Donate with PayPal">
-      </a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400">
-        <img src="https://img.shields.io/badge/Stripe-Donate-635bff?logo=stripe&logoColor=white" alt="Donate with Stripe">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>WeChat</strong></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>Alipay</strong></td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="WeChat QR" src="figs/donate_wechat.png" width="240"/></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="Alipay QR" src="figs/donate_alipay.png" width="240"/></td>
-  </tr>
-</table>
-</div>
+| Donate | PayPal | Stripe |
+|---|---|---|
+| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## License
 
