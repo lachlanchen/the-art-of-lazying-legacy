@@ -3,116 +3,111 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# The Art of Lazying
+# فن الكسل
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/lachlanchen)
-[![Website](https://img.shields.io/badge/Website-lazying.art-0a66c2)](https://lazying.art)
-[![Docs](https://img.shields.io/badge/Docs-Multilingual-1f883d)](i18n)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](#prerequisites)
-[![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#projects)
+<p align="center">
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" /></a>
+<a href="https://github.com/sponsors/lachlanchen"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink?logo=github&logoColor=white" /></a>
+<a href="https://lazying.art"><img alt="Website" src="https://img.shields.io/badge/Website-lazying.art-0a66c2?logo=Google%20Chrome&logoColor=white" /></a>
+<a href="i18n"><img alt="Docs" src="https://img.shields.io/badge/Docs-Multilingual-1f883d?logo=markdown&logoColor=white" /></a>
+<a href="#prerequisites"><img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/lachlanchen/the-art-of-lazying?style=flat-square&color=orange" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+</p>
 
-مستودع يروّج للكسل الاستراتيجي من أجل حياة أبسط وأكثر إنتاجية، ويغطي وكلاء الذكاء الاصطناعي، وتعلّم اللغات، ومدونات الفيديو مع نصائح عملية وحالات استخدام واقعية.
+مستودع على مستوى المشروع للتجارب العملية المتعلقة بالإنتاجية بمساعدة الذكاء الاصطناعي، وأنظمة تعلم اللغات، وأدوات المساعدة.
 
-> أنجز أقل في المهام منخفضة الأثر، وحقّق نتائج أكثر قيمة.
+> اعمل أقل في الأعمال منخفضة العائد، وركّز الجهد على النتائج عالية الأثر.
 
-![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
+| 🎯 الهدف | 🎛️ المكدس الأساسي | 🧭 الهدف |
+|---|---|---|
+| أتمتة المهام المتكررة | Python + shell | تقليل الحمل المعرفي |
 
-## Table of Contents
+---
 
-- [Overview](#overview)
-- [Features](#features)
-- [Projects](#projects)
-- [Project Structure](#project-structure)
-- [Introduction](#introduction)
-- [The Theory of Lazying](#the-theory-of-lazying)
-- [Practical Tips and Tricks](#practical-tips-and-tricks)
-- [Use Cases](#use-cases)
-- [AI Agents and Automation](#ai-agents-and-automation)
-- [Language Learning and Vlogs](#language-learning-and-vlogs)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Development Notes](#development-notes)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap](#roadmap)
-- [Community Contributions](#community-contributions)
-- [Contributing](#contributing)
-- [Connect](#connect)
+![عرض إنك-وردز-جي بي تي](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
+
+## جدول المحتويات
+
+- [نظرة عامة](#overview)
+- [الميزات](#features)
+- [المشاريع](#projects)
+- [هيكل المشروع](#project-structure)
+- [نظرة عامة على نهج الكسل](#overview-of-the-lazying-approach)
+- [النصائح والحيل العملية](#practical-tips-and-tricks)
+- [حالات الاستخدام](#use-cases)
+- [الوكلاء الذكيون والأتمتة](#ai-agents-and-automation)
+- [تعلم اللغات والفلوغز](#language-learning-and-vlogs)
+- [المتطلبات الأساسية](#prerequisites)
+- [التثبيت](#installation)
+- [الإعداد](#configuration)
+- [الاستخدام](#usage)
+- [أمثلة](#examples)
+- [ملاحظات التطوير](#development-notes)
+- [استكشاف المشكلات](#troubleshooting)
+- [خطة الطريق](#roadmap)
+- [مساهمات المجتمع](#community-contributions)
+- [المساهمة](#contributing)
 - [❤️ Support](#-support)
-- [License](#license)
+- [التواصل](#connect)
+- [الرخصة](#license)
 
-## Overview
+<a id="overview"></a>
+## نظرة عامة
 
-`The Art of Lazying` هو مستودع شامل يجمع بين الفلسفة، والأتمتة العملية، وأدوات الإبداع المدعومة بالذكاء الاصطناعي، وتجارب تعلّم اللغات.
+`The Art of Lazying` هو مستودع مظلة بنمط legacy: مجموعة براغماتية من سيرات عمل الذكاء الاصطناعي، وأدوات الـ shell، وتجارب Raspberry Pi، وموارد التعلم.
 
-### Project Signals
+### إشارات المشروع
 
-| Signal | Value |
+| المؤشر | القيمة |
 |---|---|
-| 🧩 نوع المستودع | مستودع شامل بطابع legacy |
-| 🧪 تركيز التشغيل | Python + أدوات shell + أدوات Raspberry Pi |
-| 🌐 التوثيق | ملفات README متعددة اللغات داخل `i18n/` |
-| 🪪 الترخيص | MIT |
+| نوع المستودع | Legacy umbrella repo |
+| وقت التشغيل الأساسي | Python + shell scripts |
+| تركيز العتاد | Raspberry Pi + e-ink (حسب الوحدة) |
+| التوثيق | مجموعة README متعددة اللغات داخل `i18n/` |
+| الترخيص | رخصة GNU General Public License 3.0 (جذر المشروع والمجلدات الفرعية الأساسية) |
 
-يتضمن:
+<a id="features"></a>
+## الميزات
 
-- عرضًا لمشاريع وسير عمل مرتبطة بالذكاء الاصطناعي.
-- سكربتات/أدوات محلية لعمليات shell آمنة وسير عمل خدمية.
-- مشروعًا لتعلّم اللغات قائمًا على العتاد (`EinkWordsGPT`) باستخدام Raspberry Pi + Waveshare e-ink + OpenAI.
-- تجارب vlog/tooling مثل تجميع DNS/IP وتحويل المستودع إلى نص.
-- توثيقًا متعدد اللغات ضمن [`i18n/`](i18n).
+- ✅ إطار عمل للكسل الاستراتيجي: أعطِ الأولوية للمهام عالية الرافعة بدلًا من العمليات المتكررة.
+- ✅ أدوات إبداعية بمساعدة الذكاء الاصطناعي وتجارب مرتبطة بالنشر.
+- ✅ أداة تعلم لغة مع عرض على شاشة e-ink وسير عمل كلمات مدعوم من OpenAI (`code/EinkWordsGPT`).
+- ✅ تشغيل shell أكثر أمانًا (`saferm` / `unrm` / `removeitanyway`).
+- ✅ سكربتات Python خفيفة لجمع DNS/IP وتحويل الكود إلى نص.
+- ✅ مركز توثيق متعدد اللغات مع نسخ README لكل لغة.
 
-### Quick Snapshot
+<a id="projects"></a>
+## المشاريع
 
-| Focus | What you get |
-|------|---|
-| 🧠 Philosophy | مبادئ الكسل الاستراتيجي للعمل عالي الأثر |
-| 🤖 AI | مساعدة إبداعية، تفريغ صوتي، ترجمة، ودعم النشر |
-| 🛠️ Utilities | حذف/استعادة آمن في shell، أدوات DNS/IP، تحويل المستودع إلى نص |
-| 🌍 i18n | نسخ README بعدة لغات داخل `i18n/` |
+### 🤖 أدوات إبداعية مدعومة بالذكاء الاصطناعي
 
-## Features
+| المشروع | النوع | التركيز |
+|---|---|---|
+| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | وحدة محلية | عرض بطاقات كلمات Raspberry Pi + Waveshare e-ink باستخدام OpenAI |
+| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | مشروع خارجي | تحليل أصول الكلمات وتقديمها على شكل رسم بياني |
+| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | مشروع خارجي | أداة عملية لتعلم اللغات |
+| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | مشروع خارجي | الترجمة التوضيحية باستخدام CLIP embeddings + GPT |
+| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | مشروع خارجي | خط أنابيب تفريغ متعدد اللغات |
+| [AutoTranslation](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | سكربت خارجي | أداة مساعدة للترجمة المترابطة/الترجمة متعددة اللغات |
+| [AutoMeta](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | سكربت خارجي | توليد تلقائي لبيانات وصف الوسائط |
+| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | مشروع خارجي | تحرير الفيديو وسير عمل الترجمة الفرعية |
+| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | مشروع خارجي | أتمتة نشر المحتوى |
+| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | مشروع خارجي | المراقبة + تنسيق عمليات النشر |
+| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | مشروع خارجي | أنماط متقدمة لصياغة التعليمات واستخدام الذكاء الاصطناعي |
 
-- ✅ إطار عمل للكسل الاستراتيجي يركز على الجهد عالي العائد.
-- ✅ مراجع لسير عمل إبداعي ونشري مدعوم بالذكاء الاصطناعي.
-- ✅ أدوات لتعلّم اللغات ونظام دراسة بشاشة e-ink.
-- ✅ أدوات مساعدة لأمان shell (`saferm`, `unrm`, `removeitanyway`).
-- ✅ أدوات Python خفيفة لجمع DNS/IP ودمج نصوص قواعد الشيفرة.
-- ✅ دعم README متعدد اللغات.
+### 🛠️ أدوات أتمتة محلية
 
-## Projects
+- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): سير عمل حذف/استرجاع أكثر أمانًا لمستخدمي shell.
+- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): محلل DNS/domain-to-IP + مدوّن قوائم CIDR.
+- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): يدمج ملفات Python الفرعية إلى حزم نصية لمراجعة الذكاء الاصطناعي.
 
-### 🤖 AI-Powered Creative Tools
+<a id="project-structure"></a>
+## هيكل المشروع
 
-| Project | Description | Demo |
-|---------|-------------|------|
-| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | شاشة e-ink لتعلّم الكلمات مدعومة بـ GPT | ![WordsOrigin](demos/words_card_arabic.JPG) |
-| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | تحليل أصل الكلمات وعرضه في مخطط بياني. | ![WordsOrigin](demos/words_origin.jpg) |
-| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | أدوات لتعلّم لغات بكفاءة وبأقل جهد | |
-| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | توليد وصف للفيديو والصور باستخدام OpenAI CLIP embeddings + GPT decoder | ![AutoCaption](demos/autocaption.PNG) |
-| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | أداة توصيف فيديو: استخراج الإطارات الرئيسية عبر Katna/OpenCV وتوليد الوصف بنموذج ViT+GPT-2 | |
-| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | خط أنابيب تفريغ صوتي متعدد اللغات مع كشف دقيق للغة | ![AutoTranscription](demos/autotranscription.PNG) |
-| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | كسر الحواجز اللغوية من أجل تبادل إبداعي عالمي | ![AutoTranslation](demos/autotranslation.JPG) |
-| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | توليد تلقائي للبيانات الوصفية للفيديو | |
-| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | أداة تحرير فيديو تلقائي مدعومة بالذكاء الاصطناعي مع التفريغ الصوتي، والترجمة التلقائية، والإبراز، وتوليد البيانات الوصفية | |
-| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | تبسيط سير عمل نشر المحتوى | ![AutoPublication](demos/autopublication.png) |
-| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | نظام آلي لمراقبة محتوى الفيديو ومعالجته ونشره على منصات متعددة | |
-| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | تقنيات متقدمة لاستخدام مساعدين الذكاء الاصطناعي بفاعلية | |
-
-### 🔄 Automation Tools
-
-تشمل الأتمتة/الأدوات المحلية داخل هذا المستودع:
-
-- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): سير عمل أكثر أمانًا للحذف/الاستعادة لمستخدمي shell.
-- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): أداة تحويل نطاق إلى IP/CIDR مع إزالة التكرار.
-- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): دمج ملفات Python حسب المجلدات الفرعية إلى مخرجات نصية.
-
-## Project Structure
-
-### Current Repository Structure
+### التخطيط الحالي للمستودع
 
 ```text
 the-art-of-lazying/
@@ -147,7 +142,7 @@ the-art-of-lazying/
     └── repo2text/
 ```
 
-### Original Conceptual Folder Structure (Preserved)
+### الهيكل المفاهيمي القديم (توثيقي)
 
 ```text
 the-art-of-lazying/
@@ -171,85 +166,84 @@ the-art-of-lazying/
   └───lazy-lifestyle/
 ```
 
-## Introduction
+<a id="overview-of-the-lazying-approach"></a>
+## نظرة عامة على نهج الكسل
 
-يقدّم The Art of Lazying مفهوم الكسل الاستراتيجي كطريقة لتحسين استخدام الطاقة والتركيز على ما يهم فعلًا. يستكشف هذا المستودع كيف يمكن للكسل المقصود أن يقود إلى إنتاجية أعلى، وإبداع أكبر، ورفاهية أفضل.
+يقوم هذا المستودع بتصوير الإنتاجية العملية من خلال **الكسل الاستراتيجي**: أتمتة القرارات منخفضة القيمة، والحفاظ على الطاقة الذهنية، وتطبيق الأنظمة قبل التكتيكات.
 
-## The Theory of Lazying
+المبدأ الأساسي ما زال رؤية عملية على أساس قاعدة 80/20:
 
-مقدمة شاملة لمبادئ الكسل الاستراتيجي، مع التركيز على تعظيم الإنتاجية والرفاهية عبر ترتيب الأولويات، والتفويض، وأتمتة المهام.
+- تحديد أعلى 20% من الإجراءات ذات التأثير الأعلى.
+- توحيد/أتمتة المسارات المتكررة.
+- إزالة الاحتكاك غير الضروري في الممارسة اليومية.
 
-المبدأ الأساسي هو تطبيق قاعدة باريتو 80/20 على الحياة اليومية: تحديد 20% من الأنشطة التي تولّد 80% من النتائج المطلوبة.
+<a id="practical-tips-and-tricks"></a>
+## النصائح والحيل العملية
 
-## Practical Tips and Tricks
+- استبدل تدفقات الأوامر المتكررة بدوال shell.
+- استخدم دورات تخطيط قصيرة (متوافقة مع تقنية بومودورو).
+- قلل إرهاق القرار بإنشاء قوالب قابلة للتكرار.
+- اسمح للذكاء الاصطناعي بالقيام بالصياغة الأولى والتحويل، ثم راجع يدويًا.
 
-مجموعة نصائح عملية قابلة للتطبيق حول استخدام مبادئ الكسل في العمل والعلاقات والعناية الذاتية:
+<a id="use-cases"></a>
+## حالات الاستخدام
 
-- أتمتة المهام المتكررة.
-- استخدام تقنية Pomodoro لإدارة الوقت.
-- بناء أنظمة تقلّل إرهاق اتخاذ القرار.
-- الاستفادة من أدوات الذكاء الاصطناعي للمساعدة.
+- تفويض وأتمتة العمليات المتكررة في سير عمل المنصات الإبداعية.
+- تبسيط مهام البحث والتوثيق عبر ملخصات مدعومة بالذكاء الاصطناعي.
+- تحويل سياق الكود بسرعة إلى نص جاهز للتحليل بمساعدة الذكاء الاصطناعي.
 
-## Use Cases
+<a id="ai-agents-and-automation"></a>
+## الوكلاء الذكيون والأتمتة
 
-أمثلة واقعية توضّح كيف تساعد مبادئ lazying على حل المشكلات وتحسين الكفاءة:
+التجارب الممثلة في هذا المستودع تشمل:
 
-- كيف يستخدم رواد الأعمال التفويض والأتمتة للتركيز على نمو الأعمال.
-- كيف يبسّط الأكاديميون سير عمل البحث.
-- كيف يحسّن صانعو المحتوى عملية الإنتاج لديهم.
+- سير عمل مساعد عملي حول تعلم الكلمات وإنشاء المحتوى.
+- جمع DNS/IP قابل للبرمجة لمهام التشغيل.
+- تصدير repository-to-text لقراءة الكود بسرعة بمساعدة الذكاء الاصطناعي.
+- أدوات أمان اختيارية على مستوى الـ shell لمنع أخطاء الحذف المدمرة.
 
-## AI Agents and Automation
+<a id="language-learning-and-vlogs"></a>
+## تعلم اللغات والفلوغز
 
-استكشف تطوير وكلاء الذكاء الاصطناعي وأدوات الأتمتة التي تبسّط المهام:
+المحتوى والمشاريع المتعلقة باللغات تركز على الثبات بجهد منخفض:
 
-- استخدام ChatGPT كمساعد شخصي.
-- بناء سير عمل أتمتة مخصص.
-- إنشاء شاشات e-ink للتعلّم السلبي.
+- التعرض السلبي + المراجعة الدورية عبر عرض e-ink.
+- سير عمل ملاحظات عابرة للغات في المشاريع الفرعية المدعومة.
+- سيناريوهات ودفاتر ملاحظات الفلوغز كمثال لهندسة الروتين العملي.
 
-## Language Learning and Vlogs
+<a id="prerequisites"></a>
+## المتطلبات الأساسية
 
-موارد وتقنيات لتعلّم اللغات بكفاءة، بالإضافة إلى vlogs توثّق رحلة lazying:
+هذا المستودع يعتمد على وحدات منفصلة؛ لا توجد حزمة إدارة تبعيات على مستوى الجذر.
 
-- بناء تجربة تعلّم لغات مخصصة باستخدام التكرار المتباعد.
-- تطبيق تقنيات التعلّم الغامر.
-- تنفيذ مشاريع تشجّع التعلّم السلبي.
+### قائمة التحقق البيئية
 
-## Prerequisites
-
-هذا المستودع متعدد المشاريع ولا يتضمن ملف اعتماديات موحّدًا على المستوى الأعلى. ثبّت فقط ما تحتاجه لكل وحدة.
-
-### Environment Checklist
-
-| Item | Baseline |
+| البند | الحد الأدنى |
 |---|---|
-| OS | يُوصى بـ Linux/macOS (لسير عمل shell) |
+| نظام التشغيل | Linux/macOS (أدوات shell)، Windows WSL مقبول لسكربتات Python |
 | Python | 3.9+ |
-| Package manager | `pip` |
-| Version control | `git` |
+| مدير الحزم | `pip` |
+| التحكم بالإصدار | `git` |
 
-Common requirements:
+### اعتماديات على مستوى الوحدات (مستمدة من المصدر)
 
-- `git`
-- Python `3.9+` (موصى به)
-- `pip`
-- أدوات بيئة افتراضية اختيارية (`python -m venv`)
-
-Module-specific signals from source code/READMEs:
-
-- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, مكتبة Python الخاصة بـ Waveshare e-paper (`waveshare_epd`) وعتاد متوافق.
+- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, `waveshare_epd`، وملفات تشغيل Raspberry Pi/e-paper (`font/*`, `pic/*`).
 - `vlogs/chatgpt-traffic`: `dnspython`.
-- `scripts/lazy-care/SafeShell`: Bash/Zsh shell.
+- `vlogs/repo2text`: مكتبة Python القياسية فقط.
+- `scripts/lazy-care/SafeShell`: Bash/Zsh مع `mv` و`realpath` وعبور تأكيد اختياري.
 
-## Installation
+<a id="installation"></a>
+## التثبيت
 
-### 1. Clone the repository
+### 1) استنساخ المستودع
 
 ```bash
+
 git clone https://github.com/lachlanchen/the-art-of-lazying.git
 cd the-art-of-lazying
 ```
 
-### 2. (Recommended) Create a Python virtual environment
+### 2) إعداد بيئة افتراضية (موصى به)
 
 ```bash
 python3 -m venv .venv
@@ -257,91 +251,84 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 ```
 
-### 3. Install Python dependencies for selected modules
+### 3) تثبيت اعتماديات الوحدات
 
 ```bash
 pip install openai pillow pytz pykakasi dnspython
 ```
 
-### 4. SafeShell setup (optional)
+### 4) اختيارية: تهيئة SafeShell
 
 ```bash
 cd scripts/lazy-care/SafeShell
-cat safeshell_functions.sh >> ~/.bashrc  # or ~/.zshrc
-source ~/.bashrc  # or ~/.zshrc
+cat safeshell_functions.sh >> ~/.bashrc  # أو ~/.zshrc
+source ~/.bashrc  # أو source ~/.zshrc
 ```
 
-## Configuration
+<a id="configuration"></a>
+## الإعداد
 
-### OpenAI / EinkWordsGPT
+### 1) OpenAI / EinkWordsGPT
 
-- `code/EinkWordsGPT/words_gpt.py` و `words_update.py` يستخدمان `OpenAI()` ويتوقعان توفّر بيانات الاعتماد في البيئة.
-- الموصى به:
+يستدعي كل من سكربتي EinkWordsGPT `OpenAI()` مباشرة، لذلك يجب أن تتوفر بيانات الاعتماد أثناء التنفيذ.
 
 ```bash
-export OPENAI_API_KEY="your_api_key_here"
+export OPENAI_API_KEY="your_openai_api_key"
 ```
 
-### SafeShell trash location
+### 2) موقع سلة Safeshell المؤقتة
 
-- يستخدم `safeshell_functions.sh` مسارًا أساسيًا ثابتًا لسلة المهملات:
+`/mnt/disk/BIN/ROOT` هو مسار السلة الافتراضي المكتوب صراحة داخل `scripts/lazy-care/SafeShell/safeshell_functions.sh`. عدّل هذا المسار داخل السكربت إذا لزم.
 
-```bash
-/mnt/disk/BIN/ROOT
-```
+### 3) مسارات دمج `repo2text`
 
-عدّل هذا المسار في السكربت إذا كان جهازك يستخدم تخطيطًا مختلفًا.
+القيم الافتراضية في `vlogs/repo2text/convert-repo-to-merged-text.py` هي:
 
-### repo2text source/target directories
+- `source_directory = 'diffraction'`
+- `target_directory = 'merged_py_files'`
 
-- `vlogs/repo2text/convert-repo-to-merged-text.py` يعيّن حاليًا:
-  - `source_directory = 'diffraction'`
-  - `target_directory = 'merged_py_files'`
+غيّر الاثنين قبل التشغيل ما لم تكن تعمل من مستودع يستخدم الأسماء نفسها.
 
-حرّر هذه المتغيرات قبل التنفيذ.
+### 4) المدخلات المخصصة في `chatgpt-traffic`
 
-## Usage
+`custom_ips` و`cidr` و`domains` مضمّنة حاليًا داخل `vlogs/chatgpt-traffic/chatgpt-traffic.py`. عدّلها مباشرة حسب الحاجة.
 
-### Command Quick Index
+<a id="usage"></a>
+## الاستخدام
 
-| Task | Command Path | Primary Command |
+### جدول الأوامر السريع
+
+| المهمة | مسار الأمر | الأمر |
 |---|---|---|
-| EinkWordsGPT display loop | `code/EinkWordsGPT` | `python words_gpt.py` |
-| EinkWordsGPT updater | `code/EinkWordsGPT` | `python words_update.py` |
-| Domain/IP resolver | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
-| Repo-to-text merge | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
-| SafeShell recovery workflow | shell profile + current shell | `saferm`, `unrm`, `removeitanyway` |
+| حلقة عرض EinkWordsGPT | `code/EinkWordsGPT` | `python words_gpt.py` |
+| محدث EinkWordsGPT | `code/EinkWordsGPT` | `python words_update.py` |
+| محلّل النطاق/IP | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
+| دمج repo-to-text | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
+| استخدام SafeShell | ملف تعريف shell + shell الحالي | `saferm`, `unrm`, `removeitanyway` |
 
-### Run EinkWordsGPT display loop (hardware setup required)
+### EinkWordsGPT
 
 ```bash
 cd code/EinkWordsGPT
 python words_gpt.py
-```
-
-### Run EinkWordsGPT word maintenance/update script
-
-```bash
-cd code/EinkWordsGPT
 python words_update.py
 ```
 
-### Run ChatGPT traffic domain/IP resolver
+### ChatGPT Traffic Resolver
 
 ```bash
 cd vlogs/chatgpt-traffic
-pip install dnspython
 python chatgpt-traffic.py
 ```
 
-### Run repository Python-file merger
+### Repo-to-text Merge
 
 ```bash
 cd vlogs/repo2text
 python convert-repo-to-merged-text.py
 ```
 
-### Use SafeShell commands after sourcing
+### SafeShell (بعد التحميل)
 
 ```bash
 saferm /path/to/file_or_directory
@@ -349,120 +336,92 @@ unrm /path/to/file_or_directory
 removeitanyway /path/to/file_or_directory
 ```
 
-## Examples
+<a id="examples"></a>
+## أمثلة
 
-- `code/EinkWordsGPT/demo.jpg`: عيّنة مخرجات شاشة e-ink.
+- `code/EinkWordsGPT/demo.jpg`: نموذج مخرج e-ink.
 - `examples/lazy-learning/BuildChachaGPTWithChatGPT/plain_transformer.ipynb`: مثال notebook.
-- `examples/lazy-learning/BuildChachaGPTWithChatGPT/Prompts of ChachaGPT.pdf`: مرجع prompts.
-- `demos/`: عروض مرئية مستخدمة في README هذا.
+- `examples/lazy-learning/BuildChachaGPTWithChatGPT/Prompts of ChachaGPT.pdf`: مرجع التعليمات.
+- `demos/`: عناصر بصرية تُستخدم في توثيق المشروع.
 
-## Development Notes
+<a id="development-notes"></a>
+## ملاحظات التطوير
 
-- هذا المستودع مشروع شامل بطابع legacy، وليس تطبيقًا أحاديًا ومعبأً كحزمة واحدة.
-- عدة أدوات مرتبطة في جدول Projects موجودة في مستودعات خارجية؛ استخدم README الخاص بكل أداة لتفاصيل التشغيل.
-- بعض الوثائق الداخلية تصف تخطيطات ملفات أقدم (مثلًا، `scripts/lazy-care` يشير إلى سكربتات منفصلة بينما التنفيذ الحالي مدمج في `SafeShell/safeshell_functions.sh`).
-- الشيفرة المعتمدة على العتاد في `EinkWordsGPT` تفترض بيئة Raspberry Pi + Waveshare e-paper.
+- هذا مستودع umbrella تاريخي؛ توثيق الوحدات هو المصدر الأوثق للسلوك التفصيلي وقت التشغيل.
+- بعض المشاريع المذكورة هي مستودعات GitHub خارجية؛ استخدم README الخاص بكل مستودع للإعداد.
+- `EinkWordsGPT` مرتبط بعتاد (Raspberry Pi + شاشة Waveshare).
+- تعتمد بعض اعتماديات الوحدات على تعريفات خارج هذا المستودع وقد تتغير بمرور الوقت.
 
-### Assumptions (Explicit)
+### الافتراضات الصريحة
 
-- README الرئيسي على المستوى الأعلى هو نقطة الدخول الأساسية، بينما تعليمات التشغيل التفصيلية للمشاريع الخارجية المرتبطة محفوظة في مستودعاتها الخاصة.
-- تُركت إصدارات حزم Python مفتوحة عمدًا لأن هذا المستودع لا يوفّر حاليًا `requirements.txt`/`pyproject.toml` في الجذر.
-- بالنسبة إلى `EinkWordsGPT`، يُفترض تنفيذ خطوات تثبيت تعريفات العتاد الخاصة بـ Waveshare على بيئة Raspberry Pi المستهدفة.
+- جذر المستودع والدلائل الأساسية للوحدات يستخدمان **GNU GPL v3.0** ما لم يذكر دليل فرعي آخر تعليمات ترخيص مختلفة.
+- خطوات التثبيت غير متمركزة عمدًا لعدم وجود `requirements.txt` أو `pyproject.toml` أو `package.json` على مستوى الجذر.
 
-## Troubleshooting
+<a id="troubleshooting"></a>
+## استكشاف المشكلات
 
-- `ModuleNotFoundError: waveshare_epd`: ثبّت مكتبات Waveshare e-paper على الجهاز المستهدف وتحقق من اعتماديات العتاد.
-- أخطاء مصادقة OpenAI: تأكد من ضبط `OPENAI_API_KEY` في shell/session النشط.
-- `File not found` حول `words_phonetics.db` أو الخطوط: شغّل السكربتات من `code/EinkWordsGPT` حتى تُحل المسارات النسبية بشكل صحيح.
-- أوامر SafeShell غير موجودة: تأكد من إلحاق `safeshell_functions.sh` بملف إعداد shell الصحيح ثم أعد تحميل shell.
-- `repo2text` لا يولّد ملفات: تحقّق من أن `source_directory` موجود ويحتوي على ملفات `.py`.
+- `ModuleNotFoundError: waveshare_epd`
+  - ثبّت وحدات e-paper الخاصة بـ Waveshare على الجهاز الهدف وتحقق من تعريفات العتاد (drivers).
+- فشل طلبات OpenAI بسبب خطأ مصادقة
+  - تأكد من تصدير `OPENAI_API_KEY` في shell/session النشط.
+- `words_phonetics.db` غير موجود
+  - شغّل سكربتات EinkWordsGPT من `code/EinkWordsGPT` حتى تُحل المسارات النسبية بشكل صحيح.
+- `saferm`/`unrm` غير متاح
+  - أعد تحميل ملف تعريف shell بعد إضافة `safeshell_functions.sh`.
+- `repo2text` لا ينتج نتائج
+  - تأكد من وجود `source_directory` وأنه يحتوي ملفات `.py`.
 
-## Roadmap
+<a id="roadmap"></a>
+## خارطة الطريق
 
-- توحيد إدارة الاعتماديات مع ملفات `requirements.txt` اختيارية لكل وحدة.
-- إضافة مشغلات مهام على مستوى الجذر أو Makefile لسير العمل الشائع.
-- توسيع وثائق الإعداد القابلة لإعادة الإنتاج لنشر Raspberry Pi + Waveshare.
-- إضافة اختبارات لسكربتات الأدوات ومساعدات تحويل البيانات.
-- مواصلة تحسين التكافؤ في التوثيق متعدد اللغات داخل `i18n/`.
+- توحيد توثيق اعتماديات الوحدات وإضافة مقاطع إعداد مخصصة لكل وحدة.
+- إضافة مشغّل جذري اختياري للمشروع (Makefile / نقطة دخول سكربت) لتنسيق سير العمل.
+- تحسين وثائق قابلية إعادة الإنتاج لنشر Raspberry Pi + Waveshare.
+- إضافة اختبارات آلية بسيطة للأدوات المساعدة.
+- الاستمرار في توسيع التماثل اللغوي داخل `i18n/`.
 
-## Community Contributions
+<a id="community-contributions"></a>
+## مساهمات المجتمع
 
-شارك تجاربك ونصائحك وأفكارك حول الكسل الاستراتيجي:
+شارك في تحسينات عملية، وأفكار أتمتة، وتجارب تعلم لغات:
 
-- منتدى لتبادل حيل الإنتاجية.
-- أدوات وقوالب للروتينات اليومية.
-- مشاريع تعاونية لتحقيق كفاءة أكبر بجهد أقل.
+- قوالب سير عمل للمهام الروتينية.
+- أنماط كسل عملية تقلل من عبء الصيانة.
+- تكاملات بين الوحدات وإصلاحات على مستوى السكربت.
 
-## Contributing
+<a id="contributing"></a>
+## المساهمة
 
-نرحّب بالمساهمات في المحتوى والسكربتات ووثائق المشاريع.
+المساهمات مرحّب بها.
 
-Standard flow:
+1. اعمل Fork للمستودع.
+2. أنشئ فرع ميزة (`git checkout -b feature/your-topic`).
+3. أجر commit للتغييرات (`git commit -m 'Add feature'`).
+4. ادفع الفرع وافتح PR.
 
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+إذا كان تغيّرُك متعلقًا بوحدة معيّنة، فحدّث README المحلي لتلك الوحدة أيضًا.
 
-إذا كان تغييرك يؤثر على وحدة فرعية محددة، فحدّث README الخاص بتلك الوحدة أيضًا.
+## التواصل
 
-## Connect
-
-| Channel | Link |
+| القناة | الرابط |
 |---|---|
-| 🌐 Website | [![Website](https://img.shields.io/badge/lazying.art-Visit-0A66C2?style=flat-square)](https://lazying.art) |
-| 🧑‍💻 GitHub | [![GitHub](https://img.shields.io/badge/lachlanchen-Profile-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lachlanchen) |
-| ✉️ Email | `lach@lazying.art` |
+| 🌐 الموقع | [lazying.art](https://lazying.art) |
+| 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
+| ✉️ البريد الإلكتروني | `lachlan@lazying.art` |
 
----
+<a id="license"></a>
+## الرخصة
+
+هذا المستودع مرخّص بموجب **GNU General Public License v3.0** (راجع [LICENSE](LICENSE)).
+
+ملاحظات:
+
+- جذر المستودع والمجلدات الأساسية للوحدات تتضمن ملفات `LICENSE` تستخدم GNU GPL.
+- إذا كنت تعمل داخل مجلد فرعي معيّن، فاستخدم أقرب ملف `LICENSE` لتحديد شروط النطاق.
+
 
 ## ❤️ Support
 
 | Donate | PayPal | Stripe |
-|---|---|---|
-| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
-
-خيارات إضافية (بما فيها أكواد QR) مذكورة أدناه:
-
-<div align="center">
-<table style="margin:0 auto; text-align:center; border-collapse:collapse;">
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate">https://chat.lazying.art/donate</a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate"><img src="figs/donate_button.svg" alt="Donate" height="44"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://paypal.me/RongzhouChen">
-        <img src="https://img.shields.io/badge/PayPal-Donate-003087?logo=paypal&logoColor=white" alt="Donate with PayPal">
-      </a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400">
-        <img src="https://img.shields.io/badge/Stripe-Donate-635bff?logo=stripe&logoColor=white" alt="Donate with Stripe">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>WeChat</strong></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>Alipay</strong></td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="WeChat QR" src="figs/donate_wechat.png" width="240"/></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="Alipay QR" src="figs/donate_alipay.png" width="240"/></td>
-  </tr>
-</table>
-</div>
-
-## License
-
-هذا المستودع مرخّص بموجب رخصة MIT. راجع [LICENSE](LICENSE) للتفاصيل.
-
-ملاحظات:
-
-- رخصة المشروع على المستوى الأعلى: MIT.
-- بعض المجلدات الفرعية تتضمن ملفات `LICENSE` خاصة بها؛ عند الشك، اتبع ملف الترخيص الأكثر تحديدًا ضمن ذلك المسار.
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |

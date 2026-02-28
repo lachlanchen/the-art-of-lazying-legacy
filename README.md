@@ -1,20 +1,32 @@
 [English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
 
+
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # The Art of Lazying
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/lachlanchen)
-[![Website](https://img.shields.io/badge/Website-lazying.art-0a66c2)](https://lazying.art)
-[![Docs](https://img.shields.io/badge/Docs-Multilingual-1f883d)](i18n)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](#prerequisites)
-[![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#projects)
+<p align="center">
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" /></a>
+<a href="https://github.com/sponsors/lachlanchen"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink?logo=github&logoColor=white" /></a>
+<a href="https://lazying.art"><img alt="Website" src="https://img.shields.io/badge/Website-lazying.art-0a66c2?logo=Google%20Chrome&logoColor=white" /></a>
+<a href="i18n"><img alt="Docs" src="https://img.shields.io/badge/Docs-Multilingual-1f883d?logo=markdown&logoColor=white" /></a>
+<a href="#prerequisites"><img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/lachlanchen/the-art-of-lazying?style=flat-square&color=orange" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+</p>
 
-A repository that promotes strategic laziness for a simplified, productive life, encompassing AI agents, language learning, and vlogs with practical tips and real-life use cases.
+A repository-level workspace for practical AI-assisted productivity experiments, language-learning systems, and utility tooling.
 
-> Work less on low-leverage tasks, ship more meaningful outcomes.
+> Work less on low-leverage work, spend cycles on high-leverage outcomes.
+
+| 🎯 Focus | 🎛️ Primary stack | 🧭 Target |
+|---|---|---|
+| automate repetitive tasks | Python + shell | reduce cognitive load |
+
+---
 
 ![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
 
@@ -24,8 +36,7 @@ A repository that promotes strategic laziness for a simplified, productive life,
 - [Features](#features)
 - [Projects](#projects)
 - [Project Structure](#project-structure)
-- [Introduction](#introduction)
-- [The Theory of Lazying](#the-theory-of-lazying)
+- [Overview of the Lazying Approach](#overview-of-the-lazying-approach)
 - [Practical Tips and Tricks](#practical-tips-and-tricks)
 - [Use Cases](#use-cases)
 - [AI Agents and Automation](#ai-agents-and-automation)
@@ -40,79 +51,60 @@ A repository that promotes strategic laziness for a simplified, productive life,
 - [Roadmap](#roadmap)
 - [Community Contributions](#community-contributions)
 - [Contributing](#contributing)
-- [Connect](#connect)
 - [❤️ Support](#-support)
+- [Connect](#connect)
 - [License](#license)
 
 ## Overview
 
-`The Art of Lazying` is an umbrella repository mixing philosophy, practical automation, AI-assisted creative tooling, and language-learning experiments.
+`The Art of Lazying` is a legacy-style umbrella repository: a pragmatic collection of AI workflows, shell utility tools, Raspberry Pi experiments, and learning resources.
 
 ### Project Signals
 
 | Signal | Value |
 |---|---|
-| 🧩 Repository Type | Legacy-style umbrella repo |
-| 🧪 Runtime Focus | Python + shell utilities + Raspberry Pi tooling |
-| 🌐 Documentation | Multilingual READMEs in `i18n/` |
-| 🪪 License | MIT |
-
-It includes:
-
-- A showcase of linked AI projects and workflows.
-- Local scripts/tools for safe shell operations and utility workflows.
-- A hardware-based language-learning project (`EinkWordsGPT`) using Raspberry Pi + Waveshare e-ink + OpenAI.
-- Vlog/tooling experiments such as DNS/IP aggregation and repository-to-text conversion.
-- Multilingual documentation under [`i18n/`](i18n).
-
-### Quick Snapshot
-
-| Focus | What you get |
-|------|---|
-| 🧠 Philosophy | Strategic laziness principles for high-leverage work |
-| 🤖 AI | Creative assistance, transcription, translation, publication support |
-| 🛠️ Utilities | Safe shell deletion/recovery, DNS/IP tooling, repo text conversion |
-| 🌍 i18n | README variants across multiple languages in `i18n/` |
+| Repository Type | Legacy umbrella repo |
+| Primary Runtime | Python + shell scripts |
+| Hardware Focus | Raspberry Pi + e-ink (module-specific) |
+| Documentation | Multilingual README set in `i18n/` |
+| License | GNU General Public License 3.0 (root and key subfolders) |
 
 ## Features
 
-- ✅ Strategic laziness framework focused on high-leverage effort.
-- ✅ AI-assisted creative and publishing workflow references.
-- ✅ Language-learning utilities and e-ink study display system.
-- ✅ Shell safety helpers (`saferm`, `unrm`, `removeitanyway`).
-- ✅ Lightweight Python utilities for DNS/IP collection and codebase text merging.
-- ✅ Multilingual README support.
+- ✅ Strategic laziness framework: prioritize high-leverage tasks over repetitive operations.
+- ✅ AI-assisted creative tools and publication-related experiments.
+- ✅ Language learning utility with e-ink rendering and OpenAI-assisted word workflow (`code/EinkWordsGPT`).
+- ✅ Safer shell operations (`saferm` / `unrm` / `removeitanyway`).
+- ✅ Lightweight Python utility scripts for DNS/IP collection and code-to-text conversion.
+- ✅ Multilingual documentation hub with language-specific README variants.
 
 ## Projects
 
 ### 🤖 AI-Powered Creative Tools
 
-| Project | Description | Demo |
-|---------|-------------|------|
-| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | E-ink display with GPT-powered word learning | ![WordsOrigin](demos/words_card_arabic.JPG) |
-| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | Words origin analysis and presenting in graph. | ![WordsOrigin](demos/words_origin.jpg) |
-| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | Tools for efficient language learning with minimal effort | |
-| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | Video & image captioning with OpenAI CLIP embeddings + GPT decoder | ![AutoCaption](demos/autocaption.PNG) |
-| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | Video captioning tool: extract key-frames with Katna/OpenCV & generate captions with a ViT+GPT-2 model | |
-| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | Multilingual transcription pipeline with fine-grained language detection | ![AutoTranscription](demos/autotranscription.PNG) |
-| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | Breaking language barriers for global creative exchange | ![AutoTranslation](demos/autotranslation.JPG) |
-| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | Automatic metadata generation for videos | |
-| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | AI-powered automatic video editing tool with transcription, auto-subtitle, highlighting, and metadata generation | |
-| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | Streamlining content publishing workflows | ![AutoPublication](demos/autopublication.png) |
-| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | Automated system for monitoring, processing, and publishing video content to multiple platforms | |
-| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | Advanced techniques for effectively using AI assistants | |
+| Project | Type | Focus |
+|---|---|---|
+| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | Local module | Raspberry Pi + Waveshare e-ink word-card display using OpenAI |
+| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | External project | Word origin analysis and graph-style presentation |
+| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | External project | Language-learning utility project |
+| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | External project | Captioning with CLIP embeddings + GPT |
+| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | External project | Multilingual transcription pipeline |
+| [AutoTranslation](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | External script | Subtitle/multilingual translation aid |
+| [AutoMeta](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | External script | Automated media metadata generation |
+| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | External project | Video editing and subtitles workflow |
+| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | External project | Content publishing automation |
+| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | External project | Monitoring + publication orchestration |
+| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | External project | Advanced prompt and AI-usage workflow patterns |
 
-### 🔄 Automation Tools
+### 🛠️ Local Automation Tools
 
-Local automation/tooling in this repository includes:
-
-- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): safer deletion/recovery workflow for shell users.
-- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): domain-to-IP/CIDR resolver and deduplicator.
-- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): merge Python files by subdirectory into text artifacts.
+- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): safer delete/recovery workflow for shell users.
+- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): DNS/domain-to-IP + CIDR list resolver.
+- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): merges Python files in subdirectories into text bundles for AI review.
 
 ## Project Structure
 
-### Current Repository Structure
+### Current Repository Layout
 
 ```text
 the-art-of-lazying/
@@ -147,7 +139,7 @@ the-art-of-lazying/
     └── repo2text/
 ```
 
-### Original Conceptual Folder Structure (Preserved)
+### Legacy Conceptual Structure (Historical Documentation)
 
 ```text
 the-art-of-lazying/
@@ -171,85 +163,77 @@ the-art-of-lazying/
   └───lazy-lifestyle/
 ```
 
-## Introduction
+## Overview of the Lazying Approach
 
-The Art of Lazying presents strategic laziness as a way to optimize energy use and focus on what truly matters. This repository explores how intentional laziness can lead to higher productivity, creativity, and well-being.
+This repo frames practical productivity around **strategic laziness**: automate low-value decisions, preserve cognitive energy, and apply systems before tactics.
 
-## The Theory of Lazying
+The core principle remains a practical 80/20 view:
 
-A comprehensive introduction to the principles of strategic laziness, focusing on how to maximize productivity and well-being by prioritizing, delegating, and automating tasks.
-
-The key principle is applying Pareto's 80/20 rule to daily life: identifying the 20% of activities that produce 80% of desired outcomes.
+- Identify the highest-leverage 20% of actions.
+- Standardize/automate repetitive flows.
+- Eliminate avoidable friction in daily practice.
 
 ## Practical Tips and Tricks
 
-A collection of actionable advice on applying lazy principles to work, relationships, and self-care:
-
-- Automating repetitive tasks.
-- Using the Pomodoro Technique for time management.
-- Creating systems that reduce decision fatigue.
-- Leveraging AI tools for assistance.
+- Replace repetitive command workflows with shell functions.
+- Use short planning cycles (Pomodoro-compatible cadence).
+- Reduce decision fatigue by creating repeatable templates.
+- Let AI perform early-pass drafting/transformation, then review manually.
 
 ## Use Cases
 
-Real-life examples demonstrating how lazying principles solve problems and improve efficiency:
-
-- How entrepreneurs use delegation and automation to focus on business growth.
-- How academics streamline research workflows.
-- How content creators optimize their production process.
+- Delegating and automating recurring operations in creator workflows.
+- Streamlining research/documentation tasks through AI-assisted summaries.
+- Rapidly converting code context into AI-ready text for analysis.
 
 ## AI Agents and Automation
 
-Explore the development of AI agents and automation tools that simplify tasks:
+Experiments represented in this repository include:
 
-- Using ChatGPT as a personal assistant.
-- Building custom automation workflows.
-- Creating e-ink displays for passive learning.
+- A practical assistant workflow around word-learning and content creation.
+- Scriptable DNS/IP aggregation for operations tasks.
+- Repo-to-text export for faster AI-assisted code inspection.
+- Optional shell-level safety tooling to prevent destructive mistakes.
 
 ## Language Learning and Vlogs
 
-Resources and techniques for efficient language learning, plus vlogs documenting the lazying journey:
+Language-related content and projects emphasize low-effort consistency:
 
-- Creating personalized language learning with spaced repetition.
-- Implementing immersive learning techniques.
-- Building projects that encourage passive learning.
+- Passive exposure + periodic review via e-ink display.
+- Cross-lingual note workflows in supported subprojects.
+- Vlog scripts and notes as examples of practical routine engineering.
 
 ## Prerequisites
 
-This repository is multi-project and does not include a single top-level dependency manifest. Install only what you need per module.
+This repository is module-based; there is no root-level package manifest.
 
 ### Environment Checklist
 
 | Item | Baseline |
 |---|---|
-| OS | Linux/macOS recommended (for shell workflows) |
+| OS | Linux/macOS (shell tooling), Windows WSL accepted for Python scripts |
 | Python | 3.9+ |
 | Package manager | `pip` |
 | Version control | `git` |
 
-Common requirements:
+### Module-level Dependencies (as inferred from source)
 
-- `git`
-- Python `3.9+` (recommended)
-- `pip`
-- Optional virtual environment tooling (`python -m venv`)
-
-Module-specific signals from source code/READMEs:
-
-- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, Waveshare e-paper Python library (`waveshare_epd`) and compatible hardware.
+- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, `waveshare_epd`, and Raspberry Pi/e-paper runtime files (`font/*`, `pic/*`).
 - `vlogs/chatgpt-traffic`: `dnspython`.
-- `scripts/lazy-care/SafeShell`: Bash/Zsh shell.
+- `vlogs/repo2text`: standard library only.
+- `scripts/lazy-care/SafeShell`: Bash/Zsh shell with `mv`, `realpath`, and optional confirm flow.
 
 ## Installation
 
-### 1. Clone the repository
+### 1) Clone
 
 ```bash
+
 git clone https://github.com/lachlanchen/the-art-of-lazying.git
 cd the-art-of-lazying
 ```
 
-### 2. (Recommended) Create a Python virtual environment
+### 2) Recommended virtual environment
 
 ```bash
 python3 -m venv .venv
@@ -257,91 +241,82 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 ```
 
-### 3. Install Python dependencies for selected modules
+### 3) Install module dependencies
 
 ```bash
 pip install openai pillow pytz pykakasi dnspython
 ```
 
-### 4. SafeShell setup (optional)
+### 4) Optional: SafeShell bootstrap
 
 ```bash
 cd scripts/lazy-care/SafeShell
 cat safeshell_functions.sh >> ~/.bashrc  # or ~/.zshrc
-source ~/.bashrc  # or ~/.zshrc
+source ~/.bashrc  # or source ~/.zshrc
 ```
 
 ## Configuration
 
-### OpenAI / EinkWordsGPT
+### 1) OpenAI / EinkWordsGPT
 
-- `code/EinkWordsGPT/words_gpt.py` and `words_update.py` use `OpenAI()` and expect credentials to be available in your environment.
-- Recommended:
-
-```bash
-export OPENAI_API_KEY="your_api_key_here"
-```
-
-### SafeShell trash location
-
-- `safeshell_functions.sh` uses a fixed trash base path:
+Both EinkWordsGPT scripts instantiate `OpenAI()` directly, so the runtime must expose credentials.
 
 ```bash
-/mnt/disk/BIN/ROOT
+export OPENAI_API_KEY="your_openai_api_key"
 ```
 
-Adjust this path in the script if your machine uses a different layout.
+### 2) SafeShell trash location
 
-### repo2text source/target directories
+`/mnt/disk/BIN/ROOT` is hardcoded as the base trash path in `scripts/lazy-care/SafeShell/safeshell_functions.sh`. Adjust this path in the script if needed.
 
-- `vlogs/repo2text/convert-repo-to-merged-text.py` currently sets:
-  - `source_directory = 'diffraction'`
-  - `target_directory = 'merged_py_files'`
+### 3) `repo2text` merge paths
 
-Edit these variables before execution.
+Defaults in `vlogs/repo2text/convert-repo-to-merged-text.py` are:
+
+- `source_directory = 'diffraction'`
+- `target_directory = 'merged_py_files'`
+
+Change both before running unless running from a repo where those names fit.
+
+### 4) `chatgpt-traffic` custom entries
+
+`custom_ips`, `cidr`, and `domains` are currently embedded in `vlogs/chatgpt-traffic/chatgpt-traffic.py`. Edit these directly as needed.
 
 ## Usage
 
-### Command Quick Index
+### Quick Command Table
 
-| Task | Command Path | Primary Command |
+| Task | Command Path | Command |
 |---|---|---|
 | EinkWordsGPT display loop | `code/EinkWordsGPT` | `python words_gpt.py` |
 | EinkWordsGPT updater | `code/EinkWordsGPT` | `python words_update.py` |
 | Domain/IP resolver | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
 | Repo-to-text merge | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
-| SafeShell recovery workflow | shell profile + current shell | `saferm`, `unrm`, `removeitanyway` |
+| SafeShell usage | shell profile + current shell | `saferm`, `unrm`, `removeitanyway` |
 
-### Run EinkWordsGPT display loop (hardware setup required)
+### EinkWordsGPT
 
 ```bash
 cd code/EinkWordsGPT
 python words_gpt.py
-```
-
-### Run EinkWordsGPT word maintenance/update script
-
-```bash
-cd code/EinkWordsGPT
 python words_update.py
 ```
 
-### Run ChatGPT traffic domain/IP resolver
+### ChatGPT Traffic Resolver
 
 ```bash
 cd vlogs/chatgpt-traffic
-pip install dnspython
 python chatgpt-traffic.py
 ```
 
-### Run repository Python-file merger
+### Repo-to-text Merge
 
 ```bash
 cd vlogs/repo2text
 python convert-repo-to-merged-text.py
 ```
 
-### Use SafeShell commands after sourcing
+### SafeShell (after sourcing)
 
 ```bash
 saferm /path/to/file_or_directory
@@ -351,118 +326,82 @@ removeitanyway /path/to/file_or_directory
 
 ## Examples
 
-- `code/EinkWordsGPT/demo.jpg`: sample e-ink output.
+- `code/EinkWordsGPT/demo.jpg`: e-ink output sample.
 - `examples/lazy-learning/BuildChachaGPTWithChatGPT/plain_transformer.ipynb`: notebook example.
 - `examples/lazy-learning/BuildChachaGPTWithChatGPT/Prompts of ChachaGPT.pdf`: prompt reference.
-- `demos/`: visual demos used in this README.
+- `demos/`: visual artifacts used in project documentation.
 
 ## Development Notes
 
-- This repository is a legacy-style umbrella project, not a monolithic packaged app.
-- Several linked tools in the Projects table live in external repositories; use their own READMEs for runtime details.
-- Some internal docs describe older file layouts (for example, `scripts/lazy-care` references split scripts while current implementation is consolidated in `SafeShell/safeshell_functions.sh`).
-- Hardware-dependent code in `EinkWordsGPT` assumes Raspberry Pi + Waveshare e-paper environment.
+- This is a legacy umbrella repository; module-level docs are the source of truth for detailed runtime behavior.
+- Some projects listed are external GitHub repos; use each repo’s README for setup.
+- `EinkWordsGPT` is hardware-bound (Raspberry Pi + Waveshare display).
+- Several module-level dependencies are declared outside the repository and may drift from docs over time.
 
-### Assumptions (Explicit)
+### Assumptions (explicit)
 
-- The top-level README is the canonical entrypoint, while detailed run instructions for linked external projects are maintained in their own repositories.
-- Python package versions are intentionally left open because this repo does not currently provide a root `requirements.txt`/`pyproject.toml`.
-- For `EinkWordsGPT`, device-driver installation steps for Waveshare hardware are expected to be performed on the target Raspberry Pi environment.
+- The repository root and major module directories use **GNU GPL v3.0** unless another directory explicitly has its own `LICENSE` guidance.
+- Module installation steps are intentionally not centralized because there is no top-level `requirements.txt`, `pyproject.toml`, or `package.json`.
 
 ## Troubleshooting
 
-- `ModuleNotFoundError: waveshare_epd`: install Waveshare e-paper libraries on the target device and confirm hardware-specific dependencies.
-- OpenAI authentication errors: verify `OPENAI_API_KEY` is set in the active shell/session.
-- `File not found` around `words_phonetics.db` or fonts: run scripts from `code/EinkWordsGPT` so relative paths resolve correctly.
-- SafeShell commands not found: ensure `safeshell_functions.sh` was appended to the correct shell profile and reload the shell.
-- `repo2text` generates no files: check `source_directory` exists and contains `.py` files.
+- `ModuleNotFoundError: waveshare_epd`
+  - Install Waveshare e-paper modules on the target machine and verify hardware drivers.
+- OpenAI requests fail with auth error
+  - Verify `OPENAI_API_KEY` is exported in the active shell/session.
+- `words_phonetics.db` not found
+  - Run EinkWordsGPT scripts from `code/EinkWordsGPT` so relative paths resolve.
+- `saferm`/`unrm` not available
+  - Re-source your shell profile after appending `safeshell_functions.sh`.
+- `repo2text` outputs nothing
+  - Confirm `source_directory` exists and contains `.py` files.
 
 ## Roadmap
 
-- Unify dependency management with optional per-module `requirements.txt` files.
-- Add root-level task runners or Makefile for common workflows.
-- Expand reproducible setup docs for Raspberry Pi + Waveshare deployment.
-- Add tests for utility scripts and data transformation helpers.
-- Continue improving multilingual documentation parity in `i18n/`.
+- Normalize module dependency documentation and include module-specific setup snippets.
+- Add optional root task runner (Makefile / script entrypoint) for module workflows.
+- Improve reproducibility docs for Raspberry Pi + Waveshare deployment.
+- Add simple automated tests for utility scripts.
+- Continue expanding language parity in `i18n/`.
 
 ## Community Contributions
 
-Share your own experiences, tips, and ideas on strategic laziness:
+Share practical improvements, automation ideas, and language-learning experiments:
 
-- Forum for exchanging productivity hacks.
-- Tools and templates for daily routines.
-- Collaborative projects for lazy efficiency.
+- Workflow templates for routine tasks.
+- Real-world laziness patterns that reduce maintenance overhead.
+- Cross-module integrations and script-level fixes.
 
 ## Contributing
 
-Contributions are welcome across content, scripts, and project docs.
+Contributions are welcome.
 
-Standard flow:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/your-topic`).
+3. Commit changes (`git commit -m 'Add feature'`).
+4. Push branch and open a PR.
 
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
-If your change affects a specific submodule, update that submodule README as well.
+If your change is module-specific, update that module’s local README as well.
 
 ## Connect
 
 | Channel | Link |
 |---|---|
-| 🌐 Website | [![Website](https://img.shields.io/badge/lazying.art-Visit-0A66C2?style=flat-square)](https://lazying.art) |
-| 🧑‍💻 GitHub | [![GitHub](https://img.shields.io/badge/lachlanchen-Profile-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lachlanchen) |
-| ✉️ Email | `lach@lazying.art` |
-
----
+| 🌐 Website | [lazying.art](https://lazying.art) |
+| 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
+| ✉️ Email | `lachlan@lazying.art` |
 
 ## ❤️ Support
 
 | Donate | PayPal | Stripe |
-|---|---|---|
-| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
-
-Additional options (including QR codes) are kept below:
-
-<div align="center">
-<table style="margin:0 auto; text-align:center; border-collapse:collapse;">
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate">https://chat.lazying.art/donate</a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://chat.lazying.art/donate"><img src="figs/donate_button.svg" alt="Donate" height="44"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://paypal.me/RongzhouChen">
-        <img src="https://img.shields.io/badge/PayPal-Donate-003087?logo=paypal&logoColor=white" alt="Donate with PayPal">
-      </a>
-    </td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;">
-      <a href="https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400">
-        <img src="https://img.shields.io/badge/Stripe-Donate-635bff?logo=stripe&logoColor=white" alt="Donate with Stripe">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>WeChat</strong></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><strong>Alipay</strong></td>
-  </tr>
-  <tr>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="WeChat QR" src="figs/donate_wechat.png" width="240"/></td>
-    <td style="text-align:center; vertical-align:middle; padding:6px 12px;"><img alt="Alipay QR" src="figs/donate_alipay.png" width="240"/></td>
-  </tr>
-</table>
-</div>
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## License
 
-This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This repository is licensed under **GNU General Public License v3.0** (see [LICENSE](LICENSE)).
 
 Notes:
 
-- Top-level project license: MIT.
-- Some subfolders include their own `LICENSE` files; when in doubt, follow the most specific license file in that path.
+- Root-level and major module directories include `LICENSE` files using GNU GPL.
+- If you work in a specific subdirectory, use the nearest `LICENSE` file for scope-specific terms.

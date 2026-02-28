@@ -1,19 +1,31 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
-
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Nghệ Thuật Sống Lười
+# Nghệ Thuật Lười Biếng
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/lachlanchen)
-[![Website](https://img.shields.io/badge/Website-lazying.art-0a66c2)](https://lazying.art)
-[![Docs](https://img.shields.io/badge/Docs-Multilingual-1f883d)](i18n)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](#điều-kiện-tiên-quyết)
-[![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20%2B%20Shell%20Tools-6f42c1)](#các-dự-án)
+<p align="center">
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" /></a>
+<a href="https://github.com/sponsors/lachlanchen"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink?logo=github&logoColor=white" /></a>
+<a href="https://lazying.art"><img alt="Website" src="https://img.shields.io/badge/Website-lazying.art-0a66c2?logo=Google%20Chrome&logoColor=white" /></a>
+<a href="i18n"><img alt="Docs" src="https://img.shields.io/badge/Docs-Multilingual-1f883d?logo=markdown&logoColor=white" /></a>
+<a href="#prerequisites"><img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/issues"><img alt="Open Issues" src="https://img.shields.io/github/issues/lachlanchen/the-art-of-lazying?style=flat-square&color=orange" /></a>
+<a href="https://github.com/lachlanchen/the-art-of-lazying/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/lachlanchen/the-art-of-lazying?style=flat-square" /></a>
+</p>
 
-Kho mã này cổ vũ triết lý “lười có chiến lược” để sống đơn giản mà vẫn hiệu quả, bao gồm AI agents, học ngôn ngữ và vlog với mẹo thực hành cùng các tình huống ứng dụng thực tế.
+Một không gian repository để thử nghiệm năng suất có hỗ trợ AI trong thực tế, hệ thống học ngôn ngữ và các công cụ tiện ích.
+
+> Làm việc ít hơn ở những nhiệm vụ giá trị thấp, dành năng lượng cho những kết quả có đòn bẩy cao.
+
+| 🎯 Mục tiêu | 🎛️ Công nghệ chính | 🧭 Mục tiêu |
+|---|---|---|
+| tự động hóa các công việc lặp lại | Python + shell | giảm tải gánh nặng nhận thức |
+
+---
 
 ![EinkWordsGPT Demo](https://raw.githubusercontent.com/lachlanchen/the-art-of-lazying/refs/heads/main/code/EinkWordsGPT/demo.jpg)
 
@@ -23,86 +35,75 @@ Kho mã này cổ vũ triết lý “lười có chiến lược” để sống
 - [Tính năng](#tính-năng)
 - [Các dự án](#các-dự-án)
 - [Cấu trúc dự án](#cấu-trúc-dự-án)
-- [Giới thiệu](#giới-thiệu)
-- [Lý thuyết về Lazying](#lý-thuyết-về-lazying)
-- [Mẹo và thủ thuật thực hành](#mẹo-và-thủ-thuật-thực-hành)
+- [Tổng quan về cách tiếp cận Lazying](#tổng-quan-về-cách-tiếp-cận-lazying)
+- [Mẹo thực tế](#mẹo-thực-tế)
 - [Tình huống sử dụng](#tình-huống-sử-dụng)
-- [AI Agents và tự động hóa](#ai-agents-và-tự-động-hóa)
-- [Học ngôn ngữ và vlog](#học-ngôn-ngữ-và-vlog)
+- [AI Agents và Tự động hóa](#ai-agents-và-tự-động-hóa)
+- [Học ngôn ngữ và Vlogs](#học-ngôn-ngữ-và-vlogs)
 - [Điều kiện tiên quyết](#điều-kiện-tiên-quyết)
 - [Cài đặt](#cài-đặt)
 - [Cấu hình](#cấu-hình)
-- [Cách dùng](#cách-dùng)
+- [Cách sử dụng](#cách-sử-dụng)
 - [Ví dụ](#ví-dụ)
 - [Ghi chú phát triển](#ghi-chú-phát-triển)
 - [Khắc phục sự cố](#khắc-phục-sự-cố)
 - [Lộ trình](#lộ-trình)
 - [Đóng góp cộng đồng](#đóng-góp-cộng-đồng)
 - [Đóng góp](#đóng-góp)
+- [❤️ Hỗ trợ](#-support)
 - [Kết nối](#kết-nối)
-- [❤️ Support](#-support)
 - [Giấy phép](#giấy-phép)
 
 ## Tổng quan
 
-`The Art of Lazying` là kho tổng hợp theo hướng “umbrella”, kết hợp triết lý sống, tự động hóa thực tiễn, công cụ sáng tạo có AI hỗ trợ và các thử nghiệm học ngôn ngữ.
+`The Art of Lazying` là một repository kiểu “umbrella” ở cấp độ hệ thống: một bộ sưu tập thực dụng gồm quy trình làm việc có AI hỗ trợ, công cụ shell tiện ích, các thí nghiệm Raspberry Pi và tài nguyên học tập.
 
-Bao gồm:
+### Dấu hiệu của dự án
 
-- Trưng bày các dự án AI và workflow liên kết.
-- Script/công cụ cục bộ cho thao tác shell an toàn và các workflow tiện ích.
-- Dự án học ngôn ngữ dựa trên phần cứng (`EinkWordsGPT`) dùng Raspberry Pi + Waveshare e-ink + OpenAI.
-- Các thử nghiệm vlog/tooling như tổng hợp DNS/IP và chuyển repository thành văn bản.
-- Tài liệu đa ngôn ngữ trong [`i18n/`](i18n).
-
-### Tổng quan nhanh
-
-| Trọng tâm | Những gì bạn nhận được |
-|------|---|
-| 🧠 Triết lý | Nguyên tắc lười có chiến lược cho công việc đòn bẩy cao |
-| 🤖 AI | Hỗ trợ sáng tạo, chép lời, dịch thuật, hỗ trợ xuất bản |
-| 🛠️ Tiện ích | Xóa/khôi phục shell an toàn, công cụ DNS/IP, chuyển repo thành văn bản |
-| 🌍 i18n | Các phiên bản README đa ngôn ngữ trong `i18n/` |
+| Chỉ số | Giá trị |
+|---|---|
+| Kiểu repository | Legacy umbrella repo |
+| Môi trường chạy chính | Python + shell scripts |
+| Trọng tâm phần cứng | Raspberry Pi + e-ink (theo từng module) |
+| Tài liệu | Bộ README đa ngôn ngữ trong `i18n/` |
+| Giấy phép | GNU General Public License 3.0 (root và các thư mục chính) |
 
 ## Tính năng
 
-- Khung “lười có chiến lược” tập trung vào nỗ lực đòn bẩy cao.
-- Tài liệu tham chiếu cho workflow sáng tạo và xuất bản có AI hỗ trợ.
-- Tiện ích học ngôn ngữ và hệ thống màn hình e-ink để học tập.
-- Bộ trợ giúp an toàn cho shell (`saferm`, `unrm`, `removeitanyway`).
-- Tiện ích Python gọn nhẹ cho thu thập DNS/IP và hợp nhất văn bản từ codebase.
-- Hỗ trợ README đa ngôn ngữ.
+- ✅ Khung chiến lược lười biếng: ưu tiên nhiệm vụ có đòn bẩy cao hơn là thao tác lặp lại.
+- ✅ Công cụ sáng tạo và thí nghiệm xuất bản có hỗ trợ AI.
+- ✅ Tiện ích học ngôn ngữ với hiển thị e-ink và quy trình làm việc từ vựng có hỗ trợ OpenAI (`code/EinkWordsGPT`).
+- ✅ Tăng độ an toàn cho shell với (`saferm` / `unrm` / `removeitanyway`).
+- ✅ Các script Python nhẹ cho thu thập DNS/IP và chuyển mã thành văn bản.
+- ✅ Kho tài liệu đa ngôn ngữ với các phiên bản README theo từng ngôn ngữ.
 
 ## Các dự án
 
-### 🤖 Công cụ sáng tạo dùng AI
+### 🤖 Công cụ sáng tạo có AI
 
-| Dự án | Mô tả | Demo |
-|---------|-------------|------|
-| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | Màn hình e-ink học từ vựng với GPT | ![WordsOrigin](demos/words_card_arabic.JPG) |
-| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | Phân tích nguồn gốc từ và trình bày dạng đồ thị. | ![WordsOrigin](demos/words_origin.jpg) |
-| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | Bộ công cụ học ngôn ngữ hiệu quả với ít công sức hơn | |
-| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | Tạo caption cho video & ảnh bằng OpenAI CLIP embeddings + GPT decoder | ![AutoCaption](demos/autocaption.PNG) |
-| [VideoCaptionerWithVit](https://github.com/lachlanchen/VideoCaptionerWithVit) | Công cụ caption video: trích xuất keyframe bằng Katna/OpenCV và tạo caption bằng mô hình ViT+GPT-2 | |
-| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | Pipeline chép lời đa ngôn ngữ với nhận diện ngôn ngữ chi tiết | ![AutoTranscription](demos/autotranscription.PNG) |
-| [**AutoTranslation**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | Phá bỏ rào cản ngôn ngữ để trao đổi sáng tạo toàn cầu | ![AutoTranslation](demos/autotranslation.JPG) |
-| [**AutoMeta**](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | Tự động tạo metadata cho video | |
-| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | Công cụ chỉnh sửa video tự động dùng AI với chép lời, phụ đề tự động, highlight và tạo metadata | |
-| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | Tinh gọn workflow xuất bản nội dung | ![AutoPublication](demos/autopublication.png) |
-| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | Hệ thống tự động theo dõi, xử lý và xuất bản nội dung video lên nhiều nền tảng | |
-| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | Kỹ thuật nâng cao để dùng trợ lý AI hiệu quả | |
+| Dự án | Loại | Mục tiêu |
+|---|---|---|
+| [EinkWordsGPT](https://github.com/lachlanchen/the-art-of-lazying/tree/main/code/EinkWordsGPT) | Module cục bộ | Raspberry Pi + màn hình từ khóa e-ink Waveshare dùng OpenAI |
+| [WordsOrigin](https://github.com/lachlanchen/WordOrigins) | Dự án bên ngoài | Phân tích nguồn gốc từ và trình bày theo kiểu đồ thị |
+| [LazyLanguageLearner](https://github.com/lachlanchen/lazylanguagelearner) | Dự án bên ngoài | Dự án công cụ học ngôn ngữ |
+| [VideoCaptionerWithClip](https://github.com/lachlanchen/VideoCaptionerWithClip) | Dự án bên ngoài | Tạo phụ đề bằng embedding CLIP + GPT |
+| [AutoTranscription - MultilingualWhisper](https://github.com/lachlanchen/MultilingualWhisper) | Dự án bên ngoài | Pipeline phiên âm đa ngôn ngữ |
+| [AutoTranslation](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_translate.py) | Script bên ngoài | Hỗ trợ dịch phụ đề và đa ngôn ngữ |
+| [AutoMeta](https://github.com/lachlanchen/LazyEdit/blob/master/lazyedit/subtitle_metadata.py) | Script bên ngoài | Tự động tạo metadata media |
+| [LazyEdit](https://github.com/lachlanchen/LazyEdit) | Dự án bên ngoài | Quy trình chỉnh sửa video và phụ đề |
+| [AutoPublication](https://github.com/lachlanchen/AutoPublication) | Dự án bên ngoài | Tự động hóa quy trình xuất bản nội dung |
+| [AutoPubMonitor](https://github.com/lachlanchen/AutoPubMonitor) | Dự án bên ngoài | Giám sát + điều phối xuất bản |
+| [Grilling ChatGPT](https://github.com/lachlanchen/grilling_chatgpt) | Dự án bên ngoài | Mẫu chiến lược prompt và cách dùng AI nâng cao |
 
-### 🔄 Công cụ tự động hóa
+### 🛠️ Công cụ tự động hóa cục bộ
 
-Tự động hóa/tooling cục bộ trong repository này bao gồm:
-
-- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): workflow xóa/khôi phục an toàn hơn cho người dùng shell.
-- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): trình phân giải domain sang IP/CIDR và loại trùng lặp.
-- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): gộp các file Python theo thư mục con thành các tệp văn bản.
+- [`scripts/lazy-care/SafeShell/safeshell_functions.sh`](scripts/lazy-care/SafeShell/safeshell_functions.sh): quy trình xóa/khôi phục an toàn hơn cho người dùng shell.
+- [`vlogs/chatgpt-traffic/chatgpt-traffic.py`](vlogs/chatgpt-traffic/chatgpt-traffic.py): công cụ giải mã domain-to-IP và danh sách CIDR.
+- [`vlogs/repo2text/convert-repo-to-merged-text.py`](vlogs/repo2text/convert-repo-to-merged-text.py): gộp các file Python trong thư mục con thành các cụm văn bản cho việc duyệt bằng AI.
 
 ## Cấu trúc dự án
 
-### Cấu trúc repository hiện tại
+### Bố cục repository hiện tại
 
 ```text
 the-art-of-lazying/
@@ -137,7 +138,7 @@ the-art-of-lazying/
     └── repo2text/
 ```
 
-### Cấu trúc thư mục ý niệm ban đầu (được giữ lại)
+### Cấu trúc khái niệm lịch sử (tài liệu lịch sử)
 
 ```text
 the-art-of-lazying/
@@ -161,76 +162,77 @@ the-art-of-lazying/
   └───lazy-lifestyle/
 ```
 
-## Giới thiệu
+## Tổng quan về cách tiếp cận Lazying
 
-The Art of Lazying xem “lười có chiến lược” là cách tối ưu năng lượng và tập trung vào điều thực sự quan trọng. Repository này khám phá cách sự lười có chủ đích có thể dẫn đến năng suất, sáng tạo và chất lượng sống cao hơn.
+Repo này định vị năng suất thực tế trên nguyên tắc **lười biếng chiến lược**: tự động hóa các quyết định giá trị thấp, giữ năng lượng nhận thức, và ưu tiên áp dụng hệ thống trước khi ứng xử theo phản xạ.
 
-## Lý thuyết về Lazying
+Nguyên tắc cốt lõi vẫn là góc nhìn thực dụng 80/20:
 
-Đây là phần giới thiệu toàn diện về các nguyên tắc của “lười có chiến lược”, tập trung vào cách tối đa hóa năng suất và hạnh phúc thông qua ưu tiên, ủy thác và tự động hóa công việc.
+- Xác định 20% hành động có đòn bẩy cao nhất.
+- Chuẩn hóa/tự động hóa các luồng lặp lại.
+- Loại bỏ ma sát không cần thiết trong thực hành hằng ngày.
 
-Nguyên tắc cốt lõi là áp dụng quy tắc 80/20 của Pareto vào cuộc sống hằng ngày: xác định 20% hoạt động tạo ra 80% kết quả mong muốn.
+## Mẹo thực tế
 
-## Mẹo và thủ thuật thực hành
-
-Tập hợp các lời khuyên có thể hành động ngay để áp dụng nguyên tắc “lười” vào công việc, quan hệ và chăm sóc bản thân:
-
-- Tự động hóa các tác vụ lặp lại.
-- Dùng kỹ thuật Pomodoro để quản lý thời gian.
-- Xây dựng hệ thống giúp giảm mệt mỏi khi ra quyết định.
-- Tận dụng công cụ AI để được hỗ trợ.
+- Thay các luồng lệnh lặp lại bằng shell functions.
+- Dùng chu kỳ lập kế hoạch ngắn (nhịp tương thích Pomodoro).
+- Giảm mệt mỏi quyết định bằng việc tạo template lặp lại.
+- Để AI xử lý bước soạn thảo/chuyển đổi ban đầu, sau đó xem xét thủ công.
 
 ## Tình huống sử dụng
 
-Các ví dụ thực tế cho thấy nguyên tắc lazying giải quyết vấn đề và cải thiện hiệu quả như thế nào:
+- Giao phó và tự động hóa các thao tác lặp lại trong quy trình tạo nội dung.
+- Tối ưu hóa nghiên cứu/tài liệu hóa thông qua tóm tắt do AI hỗ trợ.
+- Chuyển nhanh ngữ cảnh mã thành văn bản dùng được cho AI để phân tích.
 
-- Cách doanh nhân dùng ủy thác và tự động hóa để tập trung tăng trưởng kinh doanh.
-- Cách giới học thuật tinh gọn workflow nghiên cứu.
-- Cách nhà sáng tạo nội dung tối ưu quy trình sản xuất.
+## AI Agents và Tự động hóa
 
-## AI Agents và tự động hóa
+Những thí nghiệm được thể hiện trong repository gồm:
 
-Khám phá việc phát triển AI agents và công cụ tự động hóa để đơn giản hóa tác vụ:
+- Quy trình trợ lý thực dụng cho học từ vựng và tạo nội dung.
+- Gom DNS/IP có thể script hóa cho công việc vận hành.
+- Xuất repo thành văn bản để kiểm tra mã bằng AI nhanh hơn.
+- Công cụ an toàn cấp shell tùy chọn giúp tránh lỗi hủy dữ liệu.
 
-- Dùng ChatGPT làm trợ lý cá nhân.
-- Xây dựng workflow tự động hóa tùy chỉnh.
-- Tạo màn hình e-ink cho học tập thụ động.
+## Học ngôn ngữ và Vlogs
 
-## Học ngôn ngữ và vlog
+Nội dung và dự án liên quan ngôn ngữ nhấn mạnh tính nhất quán với nỗ lực thấp:
 
-Tài nguyên và kỹ thuật để học ngôn ngữ hiệu quả, cùng các vlog ghi lại hành trình lazying:
-
-- Tạo lộ trình học ngôn ngữ cá nhân hóa với spaced repetition.
-- Triển khai các kỹ thuật học nhập vai.
-- Xây dựng dự án khuyến khích học tập thụ động.
+- Tiếp xúc thụ động + ôn tập định kỳ qua màn hình e-ink.
+- Quy trình ghi chú liên ngôn ngữ trong các subproject hỗ trợ.
+- Kịch bản vlog và ghi chú như ví dụ thực hành cho kỹ thuật quy trình thường nhật.
 
 ## Điều kiện tiên quyết
 
-Repository này gồm nhiều dự án và không có một manifest phụ thuộc cấp cao nhất duy nhất. Chỉ cài những gì bạn cần theo từng module.
+Repository này theo hướng module; không có manifest phụ thuộc ở cấp root.
 
-Yêu cầu phổ biến:
+### Danh sách kiểm tra môi trường
 
-- `git`
-- Python `3.9+` (khuyến nghị)
-- `pip`
-- Công cụ môi trường ảo (tùy chọn) (`python -m venv`)
+| Mục | Cơ sở |
+|---|---|
+| Hệ điều hành | Linux/macOS (công cụ shell), Windows WSL được chấp nhận cho script Python |
+| Python | 3.9+ |
+| Trình quản lý gói | `pip` |
+| Kiểm soát phiên bản | `git` |
 
-Các tín hiệu theo từng module từ source code/README:
+### Phụ thuộc theo module (theo mã nguồn)
 
-- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, thư viện Python cho Waveshare e-paper (`waveshare_epd`) và phần cứng tương thích.
+- `code/EinkWordsGPT`: `openai`, `Pillow`, `pytz`, `pykakasi`, `waveshare_epd`, và runtime Raspberry Pi/e-paper (`font/*`, `pic/*`).
 - `vlogs/chatgpt-traffic`: `dnspython`.
-- `scripts/lazy-care/SafeShell`: Bash/Zsh shell.
+- `vlogs/repo2text`: chỉ dùng thư viện chuẩn.
+- `scripts/lazy-care/SafeShell`: Bash/Zsh với `mv`, `realpath`, và luồng xác nhận tùy chọn.
 
 ## Cài đặt
 
-### 1. Clone repository
+### 1) Clone
 
 ```bash
+
 git clone https://github.com/lachlanchen/the-art-of-lazying.git
 cd the-art-of-lazying
 ```
 
-### 2. (Khuyến nghị) Tạo Python virtual environment
+### 2) Thiết lập môi trường ảo đề xuất
 
 ```bash
 python3 -m venv .venv
@@ -238,81 +240,82 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 ```
 
-### 3. Cài phụ thuộc Python cho các module đã chọn
+### 3) Cài đặt phụ thuộc theo module
 
 ```bash
 pip install openai pillow pytz pykakasi dnspython
 ```
 
-### 4. Thiết lập SafeShell (tùy chọn)
+### 4) Thiết lập tùy chọn: SafeShell bootstrap
 
 ```bash
 cd scripts/lazy-care/SafeShell
-cat safeshell_functions.sh >> ~/.bashrc  # or ~/.zshrc
-source ~/.bashrc  # or ~/.zshrc
+cat safeshell_functions.sh >> ~/.bashrc  # hoặc ~/.zshrc
+source ~/.bashrc  # hoặc source ~/.zshrc
 ```
 
 ## Cấu hình
 
-### OpenAI / EinkWordsGPT
+### 1) OpenAI / EinkWordsGPT
 
-- `code/EinkWordsGPT/words_gpt.py` và `words_update.py` dùng `OpenAI()` và kỳ vọng thông tin xác thực có sẵn trong môi trường của bạn.
-- Khuyến nghị:
-
-```bash
-export OPENAI_API_KEY="your_api_key_here"
-```
-
-### Vị trí thùng rác của SafeShell
-
-- `safeshell_functions.sh` dùng đường dẫn gốc cố định cho thùng rác:
+Cả hai script của EinkWordsGPT đều khởi tạo trực tiếp `OpenAI()`, vì vậy runtime phải có biến chứng thực.
 
 ```bash
-/mnt/disk/BIN/ROOT
+export OPENAI_API_KEY="your_openai_api_key"
 ```
 
-Hãy chỉnh đường dẫn này trong script nếu máy của bạn dùng cấu trúc khác.
+### 2) Vị trí thùng rác SafeShell
 
-### Thư mục nguồn/đích của repo2text
+`/mnt/disk/BIN/ROOT` được mã hóa cứng làm đường dẫn thùng rác gốc trong `scripts/lazy-care/SafeShell/safeshell_functions.sh`. Hãy chỉnh sửa nếu cần.
 
-- `vlogs/repo2text/convert-repo-to-merged-text.py` hiện đặt:
-  - `source_directory = 'diffraction'`
-  - `target_directory = 'merged_py_files'`
+### 3) Đường dẫn merge `repo2text`
 
-Hãy sửa các biến này trước khi chạy.
+Mặc định trong `vlogs/repo2text/convert-repo-to-merged-text.py` là:
 
-## Cách dùng
+- `source_directory = 'diffraction'`
+- `target_directory = 'merged_py_files'`
 
-### Chạy vòng lặp hiển thị EinkWordsGPT (cần thiết lập phần cứng)
+Sửa cả hai nếu chạy trong repo có tên thư mục không khớp.
+
+### 4) Mục tùy chỉnh của `chatgpt-traffic`
+
+`custom_ips`, `cidr`, và `domains` hiện đang nằm trong `vlogs/chatgpt-traffic/chatgpt-traffic.py`. Chỉnh trực tiếp theo nhu cầu.
+
+## Cách sử dụng
+
+### Bảng lệnh nhanh
+
+| Nhiệm vụ | Đường dẫn lệnh | Lệnh |
+|---|---|---|
+| Vòng lặp hiển thị EinkWordsGPT | `code/EinkWordsGPT` | `python words_gpt.py` |
+| Trình cập nhật EinkWordsGPT | `code/EinkWordsGPT` | `python words_update.py` |
+| Bộ phân giải Domain/IP | `vlogs/chatgpt-traffic` | `python chatgpt-traffic.py` |
+| Hợp nhất repo thành text | `vlogs/repo2text` | `python convert-repo-to-merged-text.py` |
+| Sử dụng SafeShell | profile shell + shell hiện tại | `saferm`, `unrm`, `removeitanyway` |
+
+### EinkWordsGPT
 
 ```bash
 cd code/EinkWordsGPT
 python words_gpt.py
-```
-
-### Chạy script bảo trì/cập nhật từ vựng EinkWordsGPT
-
-```bash
-cd code/EinkWordsGPT
 python words_update.py
 ```
 
-### Chạy trình phân giải domain/IP cho ChatGPT traffic
+### ChatGPT Traffic Resolver
 
 ```bash
 cd vlogs/chatgpt-traffic
-pip install dnspython
 python chatgpt-traffic.py
 ```
 
-### Chạy công cụ gộp file Python trong repository
+### Repo-to-text Merge
 
 ```bash
 cd vlogs/repo2text
 python convert-repo-to-merged-text.py
 ```
 
-### Dùng lệnh SafeShell sau khi đã source
+### SafeShell (sau khi source)
 
 ```bash
 saferm /path/to/file_or_directory
@@ -322,61 +325,62 @@ removeitanyway /path/to/file_or_directory
 
 ## Ví dụ
 
-- `code/EinkWordsGPT/demo.jpg`: mẫu đầu ra e-ink.
+- `code/EinkWordsGPT/demo.jpg`: ví dụ đầu ra e-ink.
 - `examples/lazy-learning/BuildChachaGPTWithChatGPT/plain_transformer.ipynb`: ví dụ notebook.
 - `examples/lazy-learning/BuildChachaGPTWithChatGPT/Prompts of ChachaGPT.pdf`: tài liệu tham chiếu prompt.
-- `demos/`: demo hình ảnh dùng trong README này.
+- `demos/`: các artefact hình ảnh dùng trong tài liệu dự án.
 
 ## Ghi chú phát triển
 
-- Repository này là dự án umbrella kiểu legacy, không phải một ứng dụng đóng gói dạng đơn khối.
-- Một số công cụ liên kết trong bảng Projects nằm ở repository bên ngoài; hãy dùng README riêng của từng repo để biết chi tiết runtime.
-- Một số tài liệu nội bộ mô tả cấu trúc file cũ hơn (ví dụ, `scripts/lazy-care` từng tham chiếu script tách rời, trong khi triển khai hiện tại được gom trong `SafeShell/safeshell_functions.sh`).
-- Code phụ thuộc phần cứng trong `EinkWordsGPT` giả định môi trường Raspberry Pi + Waveshare e-paper.
+- Đây là repository kiểu umbrella legacy; tài liệu cấp module là nguồn đúng cho hành vi chạy chi tiết.
+- Một số dự án liệt kê là repo GitHub ngoài; hãy dùng README của từng repo để cấu hình chi tiết.
+- `EinkWordsGPT` phụ thuộc phần cứng (Raspberry Pi + màn hình Waveshare).
+- Một số phụ thuộc ở mức module được khai báo ngoài repo và có thể khác thời điểm tài liệu.
 
-### Giả định (tường minh)
+### Giả định (rõ ràng)
 
-- README cấp cao nhất là điểm vào chuẩn (canonical), còn hướng dẫn chạy chi tiết cho các dự án liên kết bên ngoài được duy trì ở repository tương ứng.
-- Phiên bản gói Python được để mở có chủ đích vì repo này hiện chưa cung cấp `requirements.txt`/`pyproject.toml` ở thư mục gốc.
-- Với `EinkWordsGPT`, các bước cài driver cho phần cứng Waveshare được giả định thực hiện trên môi trường Raspberry Pi đích.
+- Repo gốc và các thư mục module lớn dùng **GNU GPL v3.0** nếu không có hướng dẫn `LICENSE` riêng.
+- Các bước cài đặt module chưa được tập trung vì không có `requirements.txt`, `pyproject.toml`, hoặc `package.json` ở root.
 
 ## Khắc phục sự cố
 
-- `ModuleNotFoundError: waveshare_epd`: cài thư viện Waveshare e-paper trên thiết bị đích và xác nhận đủ phụ thuộc đặc thù phần cứng.
-- Lỗi xác thực OpenAI: kiểm tra `OPENAI_API_KEY` đã được set trong shell/session đang hoạt động.
-- `File not found` liên quan `words_phonetics.db` hoặc font: chạy script từ `code/EinkWordsGPT` để đường dẫn tương đối được resolve đúng.
-- Không tìm thấy lệnh SafeShell: bảo đảm `safeshell_functions.sh` đã được append vào đúng file cấu hình shell và reload shell.
-- `repo2text` không tạo file: kiểm tra `source_directory` có tồn tại và chứa file `.py`.
+- `ModuleNotFoundError: waveshare_epd`
+  - Cài module e-paper Waveshare trên máy đích và xác nhận driver/phần cứng.
+- OpenAI request lỗi xác thực
+  - Kiểm tra `OPENAI_API_KEY` đã được export trong shell/session đang dùng.
+- Không tìm thấy `words_phonetics.db`
+  - Chạy script EinkWordsGPT từ `code/EinkWordsGPT` để đường dẫn tương đối được giải quyết đúng.
+- `saferm`/`unrm` không khả dụng
+  - Source lại profile shell sau khi thêm `safeshell_functions.sh`.
+- `repo2text` không xuất đầu ra
+  - Xác nhận `source_directory` tồn tại và chứa file `.py`.
 
 ## Lộ trình
 
-- Chuẩn hóa quản lý dependencies với `requirements.txt` tùy chọn cho từng module.
-- Thêm task runner cấp root hoặc Makefile cho workflow phổ biến.
-- Mở rộng tài liệu setup tái lập được cho triển khai Raspberry Pi + Waveshare.
-- Bổ sung test cho script tiện ích và helper chuyển đổi dữ liệu.
-- Tiếp tục cải thiện độ tương đương tài liệu đa ngôn ngữ trong `i18n/`.
+- Chuẩn hóa tài liệu phụ thuộc module và thêm các đoạn cấu hình cụ thể theo module.
+- Thêm task runner root tùy chọn (Makefile / entrypoint script) cho workflow module.
+- Cải thiện tài liệu tái lập cho triển khai Raspberry Pi + Waveshare.
+- Thêm test tự động cơ bản cho các script tiện ích.
+- Tiếp tục mở rộng tính tương đương ngôn ngữ trong `i18n/`.
 
 ## Đóng góp cộng đồng
 
-Chia sẻ trải nghiệm, mẹo và ý tưởng của bạn về “lười có chiến lược”:
+Chia sẻ cải tiến thực dụng, ý tưởng tự động hóa và thí nghiệm học ngôn ngữ:
 
-- Diễn đàn trao đổi các mẹo năng suất.
-- Công cụ và template cho thói quen hằng ngày.
-- Dự án cộng tác cho hiệu quả kiểu “lười mà chất”.
+- Template workflow cho công việc routine.
+- Mẫu laziness thực tế giúp giảm chi phí bảo trì.
+- Kết nối giữa module và sửa lỗi ở cấp script.
 
 ## Đóng góp
 
-Mọi đóng góp cho nội dung, script và tài liệu dự án đều được chào đón.
+Mọi đóng góp đều được chào đón.
 
-Luồng làm việc chuẩn:
+1. Fork repository.
+2. Tạo nhánh feature (`git checkout -b feature/your-topic`).
+3. Commit thay đổi (`git commit -m 'Add feature'`).
+4. Đẩy nhánh và mở PR.
 
-1. Fork dự án.
-2. Tạo nhánh tính năng (`git checkout -b feature/AmazingFeature`).
-3. Commit thay đổi (`git commit -m 'Add some AmazingFeature'`).
-4. Push nhánh (`git push origin feature/AmazingFeature`).
-5. Mở Pull Request.
-
-Nếu thay đổi của bạn ảnh hưởng một submodule cụ thể, hãy cập nhật README của submodule đó luôn.
+Nếu thay đổi của bạn theo module cụ thể, hãy cập nhật thêm README cục bộ của module đó.
 
 ## Kết nối
 
@@ -386,19 +390,18 @@ Nếu thay đổi của bạn ảnh hưởng một submodule cụ thể, hãy c�
 | 🧑‍💻 GitHub | [lachlanchen](https://github.com/lachlanchen) |
 | ✉️ Email | `lach@lazying.art` |
 
----
+## Giấy phép
+
+Repository này được cấp phép theo **GNU General Public License v3.0** (xem [LICENSE](LICENSE)).
+
+Lưu ý:
+
+- Root và các thư mục module lớn gồm các file `LICENSE` dùng GNU GPL.
+- Nếu làm việc trong một thư mục con cụ thể, hãy dùng file `LICENSE` gần nhất để xác định phạm vi cấp phép.
+
 
 ## ❤️ Support
 
 | Donate | PayPal | Stripe |
-|---|---|---|
-| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
-
-## Giấy phép
-
-Repository này được cấp phép theo MIT License. Xem [LICENSE](LICENSE) để biết chi tiết.
-
-Ghi chú:
-
-- Giấy phép dự án cấp cao nhất: MIT.
-- Một số thư mục con có `LICENSE` riêng; khi có nghi ngờ, hãy ưu tiên file giấy phép cụ thể nhất trong đường dẫn đó.
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
